@@ -73,3 +73,9 @@ The admin website is designed to allow gym administrators to manage members:
    <img width="75%" alt="Profile page" src="https://github.com/user-attachments/assets/d2488904-6afe-4885-807c-5689000c6220">
 </div>
 
+## Technologies Used
+
+- **Backend**: Spring Boot, JPA/Hibernate, MySQL
+- **Frontend (iOS)**: Swift
+- **Web**: HTML/CSS/JavaScript
+- **Push Notifications**: Apple Push Notification Service (APNS)
