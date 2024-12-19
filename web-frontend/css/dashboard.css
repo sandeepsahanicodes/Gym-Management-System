@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F2F2F6;
+}
+
+.card-item > img {
+    width: 25px;
+    height: 25px;
+    margin: 10px;
+}
+.card-container {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+.image-box {
+    background-color: #007AFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+}
+
+.user-avatar img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+
