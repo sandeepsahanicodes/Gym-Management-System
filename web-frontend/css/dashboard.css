@@ -7,6 +7,29 @@
 body {
     background-color: #F2F2F6;
 }
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 20px; */
+    background-color: #FF3B30;
+    /* padding: 20px; */
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+nav {
+    display: flex;
+    flex-direction: row;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 20px;
+}
 
 .user-avatar img {
     height: 50px;
@@ -16,29 +39,33 @@ body {
 }
 
 .card-container {
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
-    background-color: white;
-    /* display: grid; */
+    
+    display: grid;
+    background-color: aqua;
 }
+
 .card-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    padding: 20px;
+    border-radius: 20px;
+    height: 200px;
+    width: 200px;
+    background-color: white;
+    
     
 }
 .card-item-top {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    /* align-items: flex-start; */
-    background-color: tomato;
+    align-items: flex-start;
+    /* background-color: tomato; */
     padding: 10px;
 }
 
 .icon-box {
-    background-color: #007AFF;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -48,11 +75,26 @@ body {
     align-items: center;
 }
 
+#first {
+    background-color: #007AFF;
+}
+#second {
+    background-color:#FF3B30;
+}
+
+#third {
+    background-color:#000000;
+}
+
+#fourth {
+    background-color:#5B6770;
+}
+
 .count-box span {
     font-size: 20px;
     width: 30px;
     height: 30px;
-    background-color: aqua;
+    /* background-color: yellow; */
 }
 
 .card-item-bottom {
