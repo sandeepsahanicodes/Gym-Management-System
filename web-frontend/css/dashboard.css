@@ -8,31 +8,55 @@ body {
     background-color: #F2F2F6;
 }
 
-.card-item > img {
-    width: 25px;
-    height: 25px;
-    margin: 10px;
-}
-.card-container {
-    height: 200px;
-    width: 200px;
-    border-radius: 20px;
-    background-color: white;
-}
-
-.image-box {
-    background-color: #007AFF;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    padding: 10px;
-}
-
 .user-avatar img {
     height: 50px;
     width: 50px;
     border-radius: 50%;
     object-fit: cover;
+}
+
+.card-container {
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+    background-color: white;
+    /* display: grid; */
+}
+.card-item {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+}
+.card-item-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    /* align-items: flex-start; */
+    background-color: tomato;
+    padding: 10px;
+}
+
+.icon-box {
+    background-color: #007AFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.count-box span {
+    font-size: 20px;
+    width: 30px;
+    height: 30px;
+    background-color: aqua;
+}
+
+.card-item-bottom {
+    background-color: #007AFF;
 }
 
 
