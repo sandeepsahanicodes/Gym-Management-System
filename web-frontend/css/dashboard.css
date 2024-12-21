@@ -7,21 +7,22 @@
 body {
     background-color: #F2F2F6;
 }
+
 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    /* gap: 20px; */
-    background-color: #FF3B30;
-    /* padding: 20px; */
     padding-left: 20px;
     padding-right: 20px;
+    position: sticky;
+    top: 0px;
+    padding: 40px;
 }
 
 nav {
     display: flex;
-    flex-direction: row;
+    gap: 20px;
 }
 
 ul {
@@ -29,6 +30,7 @@ ul {
     flex-direction: row;
     list-style-type: none;
     gap: 20px;
+    align-items: center;
 }
 
 .user-avatar img {
@@ -39,11 +41,25 @@ ul {
 }
 
 .card-container {
-    
     display: grid;
+    grid-template-columns: 300px 300px;
+    gap: 25px;
+    justify-content: center;
+    justify-items: center;
+    padding: 50px;
     background-color: aqua;
 }
-
+.gym-members-scroll-view {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: blue;
+    height: 300px;
+}
+.member {
+    background-color: tomato;
+    height: 20px;
+}
 .card-item {
     display: flex;
     flex-direction: column;
@@ -51,10 +67,9 @@ ul {
     padding: 20px;
     border-radius: 20px;
     height: 200px;
-    width: 200px;
+    width: 300px;
     background-color: white;
-    
-    
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
 .card-item-top {
     display: flex;
@@ -94,11 +109,10 @@ ul {
     font-size: 20px;
     width: 30px;
     height: 30px;
-    /* background-color: yellow; */
 }
 
 .card-item-bottom {
-    background-color: #007AFF;
+    /* background-color: #007AFF; */
 }
 
 
