@@ -17,7 +17,7 @@ header {
     padding-right: 20px;
     position: sticky;
     top: 0px;
-    padding: 40px;
+    /* padding: 40px; */
 }
 
 nav {
@@ -46,27 +46,16 @@ ul {
     gap: 25px;
     justify-content: center;
     justify-items: center;
-    padding: 50px;
-    background-color: aqua;
+    /* background-color: aqua; */
 }
-.gym-members-scroll-view {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    background-color: blue;
-    height: 300px;
-}
-.member {
-    background-color: tomato;
-    height: 20px;
-}
+
 .card-item {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 20px;
     border-radius: 20px;
-    height: 200px;
+    height: 400px;
     width: 300px;
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
@@ -80,6 +69,14 @@ ul {
     padding: 10px;
 }
 
+.cards-and-people-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    /* align-items: center; */
+    gap: 20px;
+    padding: 50px;
+}
 .icon-box {
     width: 60px;
     height: 60px;
@@ -88,6 +85,45 @@ ul {
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.gym-members-scroll-view {
+    display: flex;
+    flex-direction: column;
+    width: 450px;
+    gap: 10px;
+    overflow-y: auto;
+    background-color: white;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.member {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    /* background-color: rgba(128, 128, 128, 0.302); */
+    height: 70px;
+    gap: 5px;
+    padding-left: 10px;
+    /* border-bottom: 1px solid grey; */
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 2px;
+    
+    
+
+}
+.name-and-joining {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.member-image img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
 }
 
 #first {
