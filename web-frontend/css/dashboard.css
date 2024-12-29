@@ -29,7 +29,6 @@
 
 body {
     background-image: linear-gradient(to right, #ffffff, #F2F2F6, #ffffff);
-    /* background-color: #F2F2F6; */
 }
 
 h1 {
@@ -48,7 +47,6 @@ header {
     position: sticky;
     top: 0px;
     padding: 20px;
-    /* background-color: pink; */
 }
 
 nav {
@@ -90,7 +88,6 @@ nav ul li a:hover {
     justify-content: center;
     justify-items: center;
     height: 70vh;
-    /* background-color: aqua; */
 }
 
 .card-item {
@@ -109,7 +106,6 @@ nav ul li a:hover {
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
-    /* background-color: tomato; */
     padding: 10px;
 }
 
@@ -175,15 +171,10 @@ nav ul li a:hover {
 
 .member {
     display: flex;
-    /* justify-content: center; */
     align-items: center;
-    /* background-color: rgba(128, 128, 128, 0.302); */
     height: 70px;
     gap: 5px;
     padding-left: 10px;
-    /* border-bottom: 1px solid grey; */
-    /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
-    /* border-radius: 2px; */
 }
 
 .member-name{
@@ -200,7 +191,6 @@ nav ul li a:hover {
 }
 
 .member:hover {
-    /* background-color: rgba(128, 128, 128, 0.1); */
     background-color: var(--system-gray-hover);
 }
 
