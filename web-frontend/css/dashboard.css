@@ -1,3 +1,26 @@
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(/web-frontend/assets/sf-pro-display/SFPRODISPLAYREGULAR.OTF) format('opentype');
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(/web-frontend/assets/sf-pro-display/SFPRODISPLAYMEDIUM.OTF) format('opentype');
+    font-weight: medium;
+}
+
+@font-face {
+    font-family: 'SF Pro Display';
+    src: url(/web-frontend/assets/sf-pro-display/SFPRODISPLAYBOLD.OTF) format('opentype');
+    font-weight: bold;
+}
+
+:root {
+    --system-gray: #8A8A8D;
+    --system-gray-hover: rgba(128, 128, 128, 0.1);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -5,7 +28,14 @@
 }
 
 body {
-    background-color: #F2F2F6;
+    background-image: linear-gradient(to right, #ffffff, #F2F2F6, #ffffff);
+    /* background-color: #F2F2F6; */
+}
+
+h1 {
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    font-size: 40px;
 }
 
 header {
@@ -17,7 +47,8 @@ header {
     padding-right: 20px;
     position: sticky;
     top: 0px;
-    /* padding: 40px; */
+    padding: 20px;
+    /* background-color: pink; */
 }
 
 nav {
@@ -31,6 +62,18 @@ ul {
     list-style-type: none;
     gap: 20px;
     align-items: center;
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    font-size: 20px;
+}
+
+nav ul li a {
+    text-decoration: none; /* Removes underline from links */
+    color: black; /* Keeps the link text color same as parent */
+  }
+
+nav ul li a:hover {
+        color: var(--system-gray);
 }
 
 .user-avatar img {
@@ -60,6 +103,7 @@ ul {
     background-color: white;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
+
 .card-item-top {
     display: flex;
     flex-direction: row;
@@ -69,6 +113,35 @@ ul {
     padding: 10px;
 }
 
+.card-item-bottom span {
+    font-family: 'SF Pro Display';
+    font-weight: bold;
+    color: var(--system-gray);
+    font-size: 20px;
+}
+
+/* CSS for button */
+.button {
+    display: inline-block;
+    padding: 8px 20px 8px 20px;
+    border-radius: 10px;
+    background-color: var(--system-gray);
+    color: white;
+    font-family: 'SF Pro Display';
+    font-weight: lighter;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button:active {
+    opacity: 1;
+}
+
 .cards-and-people-container {
     display: flex;
     flex-direction: row;
@@ -76,6 +149,7 @@ ul {
     gap: 20px;
     padding: 50px;
 }
+
 .icon-box {
     width: 60px;
     height: 60px;
@@ -98,6 +172,7 @@ ul {
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
+
 .member {
     display: flex;
     /* justify-content: center; */
@@ -110,15 +185,32 @@ ul {
     /* box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); */
     /* border-radius: 2px; */
 }
-.member:hover {
-    background-color: rgba(128, 128, 128, 0.1);
+
+.member-name{
+    font-family: 'SF Pro Display';
+    font-weight: bold;
+    font-size: 20px;
 }
+
+.member-joining-date {
+    font-family: 'SF Pro Display';
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--system-gray);
+}
+
+.member:hover {
+    /* background-color: rgba(128, 128, 128, 0.1); */
+    background-color: var(--system-gray-hover);
+}
+
 .name-and-joining {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
 }
+
 .member-image img {
     width: 60px;
     height: 60px;
@@ -142,13 +234,11 @@ ul {
 }
 
 .count-box span {
-    font-size: 20px;
+    font-family: 'SF Pro Display';
+    font-weight: bold;
+    font-size: 25px;
     width: 30px;
     height: 30px;
-}
-
-.card-item-bottom {
-    /* background-color: #007AFF; */
 }
 
 
