@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/web-frontend/css/global.css">
+    <link rel="stylesheet" href="/web-frontend/css/forms.css">
+    <link rel="stylesheet" href="/web-frontend/css/update.css">
+    <link rel="shortcut icon" href="/web-frontend/assets/images/icons/favicon.png" type="image/x-icon">
+    <title>Update member</title>
+</head>
+<body>
+    <header>
+        <h1>Update a Member</h1>
+        <nav>
+            <ul>
+                <li><a href="/web-frontend/html/dashboard.html">Dashboard</a></li>
+                <li><a href="/web-frontend/html/register.html">Register</a></li>
+                <li><a href="/web-frontend/html/update.html">Update</a></li>
+            </ul>
+            <div class="user-avatar">
+                <img src="/web-frontend/assets/images/my-avatar.jpg" alt="profile pic">
+            </div>
+        </nav>
+    </header>
+    
+    <main>
+        <div class="form-component">
+
+            <h3>Basic Details</h3>
+            <div class="form-elements">
+                <div class="image-container">
+
+                    <div class="image-block">
+                        <img src="/web-frontend/assets/images/icons/camera.svg" alt="user">
+                    </div>
+                    <label for="add-photo" class="add-photo-label-btn">
+                        Add Photo
+                    </label>
+                    <input type="file" id="add-photo" name="Add Photo" accept="image/*" style="display: none;">
+                </div>
+                <form action="/submit" method="post">
+
+
+                    <div class="form-group" id="full-name-form-group">
+                        <label for="full-name">Full Name</label>
+                        <input type="text" id="full-name" name="full_name" placeholder="Enter Your Full Name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="text" id="email" name="email" placeholder="Enter Your Email" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="mobile">Mobile</label>
+                        <input type="tel" id="mobile" name="mobile" placeholder="Enter Your Mobile Number" required>
+                    </div>
+
+                    <div class="form-group" id="gender-form-group">
+                        <label for="gender">Gender</label>
+                        <select name="gender" id="gender" required>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                            <option value="other">Other</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="address">Address</label>
+                        <input type="tel" id="address" name="address" placeholder="Enter Your Address" required>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <div class="form-component">
+            <h3>Gym Related Details </h3>
+            <div class="form-elements">
+                <form action="/submit" method="post">
+                    <div class="form-group" id="joining-date-form-group">
+                        <label for="full-name">Joining Date</label>
+                        <input type="date" id="joining-date" name="joining-date"required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="membership-type">Membership Type</label>
+                        <select name="membership-type" id="membership-type">
+                            <option value="diamond">Diamond</option>
+                            <option value="silver">Silver</option>
+                            <option value="gold">Gold</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="free-payment-date">Free Payment Date</label>
+                        <input type="date" id="free-payment-date" name="free-payment-date" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="trainer-assigned">Trainer Assigned</label>
+                        <select name="trainer-assigned" id="trainer-assignede">
+                            <option value="mukesh-sharma">Mukesh Sharma</option>
+                            <option value="sourav-singh">Sourav Singh</option>
+                            <option value="badal-biswas">Badal Biswas</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+        </div>
+
+        <button type="submit" id="update-btn">Update</button>
+    </main>
+</body>
+</html>

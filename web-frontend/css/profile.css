@@ -1,0 +1,136 @@
+main {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    overflow-y: scroll;
+    height: 100vh;
+    position: fixed;
+}
+
+.profile-details-container {
+    width: 20%;
+}
+
+.profile-user-avatar {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 250px;
+   height: 250px;
+   border-radius: 50%;
+   background-color: var(--system-gray-light)
+}
+
+img {
+   width: 50%;
+   height: 50%;
+}
+.name-and-bio-container {
+   display: flex;
+   flex-direction: column;
+   gap: 10px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+}
+.name-container h2 {
+   font-family: 'Sf Pro Display';
+   font-weight: bold;
+   font-size: 30px;
+}
+
+.bio-container p {
+    font-family: 'Sf Pro Display';
+    font-weight: normal;
+    color: var(--system-gray);
+}
+
+h3 {
+    font-family: 'Sf Pro Display';
+    font-weight: bold;
+}
+.details-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.details-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 5px;
+}
+.details-item img {
+    width: 20px;
+    height: 20px;
+}
+
+.details-item p {
+    font-family: 'Sf Pro Display';
+    font-weight: bold;
+    color: var(--system-gray);
+}
+
+.posts-container {
+    overflow-y: scroll;
+    height: 90vh;
+    width: 50%;
+    border-radius: 20px;
+}
+
+.post {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    padding: 20px;
+}
+
+.post-header .member-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--system-gray-light);
+}
+
+.member-name{
+    font-family: 'Sf Pro Display';
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.posting-date {
+    font-family: 'Sf Pro Display';
+    font-weight: normal;
+    font-size: 15px;
+    color: var(--system-gray);
+}
+.post-image img{
+    width: 100%;
+    height: 30%;
+    object-fit: cover;
+    padding: 20px;
+}
+
+.post-caption p {
+    font-family: 'Sf Pro Display';
+    font-weight: lighter;
+    font-size: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
