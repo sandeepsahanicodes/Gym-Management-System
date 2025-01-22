@@ -1,198 +1,230 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Admin Dashboard</title>
-    <link rel="stylesheet" href="css/global.css">
-    <link rel="stylesheet" href="css/dashboard.css">
-    <link rel="icon" href="assets/images/icons/favicon.png" type="image/png">
+    <link rel="stylesheet" href="css/global.css" />
+    <link rel="stylesheet" href="css/dashboard.css" />
+    <link rel="icon" href="assets/images/icons/favicon.png" type="image/png" />
+  </head>
 
-</head>
-
-<body>
+  <body>
     <header>
-        <h1>Dashboard</h1>
-        <nav>
-            <ul>
-                <li><a href="#">Dashboard</a></li>
-                <li><a href="html/register.html">Register</a></li>
-                <li><a href="#contact">Update</a></li>
-            </ul>
-            <div class="user-avatar">
-                <img src="assets/images//persons/my-avatar.jpg" alt="profile pic">
-            </div>
-            
-        </nav>
+      <h1>Dashboard</h1>
+      <nav>
+        <ul>
+          <li><a href="/index.html">Dashboard</a></li>
+          <li><a href="html/register.html">Register</a></li>
+          <li><a href="html/update.html">Update</a></li>
+        </ul>
+        <div class="user-avatar">
+          <img src="assets/images//persons/my-avatar.jpg" alt="profile pic" />
+        </div>
+      </nav>
     </header>
 
     <main>
-        <div class="cards-and-people-container">
-
+      <div class="cards-and-people-container">
         <div class="card-container">
-            
-            <div class="card-item">
-                <div class="card-item-top">
-                    <div class="icon-box" id="first"><img src="assets/images/icons/dashboard/person.3.fill.svg"
-                            alt="persons.fill"></div>
-                    <div class="count-box"><span>10</span></div>
-                </div>
-                <div class="card-item-bottom">
-                    <span>People in the Gym Now</span>
-                </div>
-
+          <div class="card-item">
+            <div class="card-item-top">
+              <div class="icon-box" id="first">
+                <img
+                  src="assets/images/icons/dashboard/person.3.fill.svg"
+                  alt="persons.fill"
+                />
+              </div>
+              <div class="count-box"><span>10</span></div>
             </div>
-
-            <div class="card-item">
-                <div class="card-item-top">
-                    <div class="icon-box" id="second"><img src="assets/images/icons//dashboard/person.fill.badge.plus.svg"
-                            alt="persons.fill"></div>
-                    <div class="count-box"><button class="button" id="add-button">Add</button></div>
-                </div>
-                <div class="card-item-bottom">
-                    <span>Add to people list</span>
-                </div>
-
+            <div class="card-item-bottom">
+              <span>People in the Gym Now</span>
             </div>
+          </div>
 
-            <div class="card-item">
-                <div class="card-item-top">
-                    <div class="icon-box" id="third"><img src="assets/images/icons//dashboard/person.3.fill.svg"
-                            alt="persons.fill"></div>
-                    <div class="count-box"><span>120</span></div>
-                </div>
-                <div class="card-item-bottom">
-                    <span>See all gym members</span>
-                </div>
-
+          <div class="card-item">
+            <div class="card-item-top">
+              <div class="icon-box" id="second">
+                <img
+                  src="assets/images/icons//dashboard/person.fill.badge.plus.svg"
+                  alt="persons.fill"
+                />
+              </div>
+              <div class="count-box">
+                <button class="button" id="add-button">Add</button>
+              </div>
             </div>
-
-            <div class="card-item">
-                <div class="card-item-top">
-                    <div class="icon-box" id="fourth"><img src="assets/images/icons//dashboard/person.fill.badge.minus.svg"
-                            alt="persons.fill"></div>
-                    <div class="count-box"><button class="button" id="add-button">Remove</button></div>
-                </div>
-                <div class="card-item-bottom">
-                    <span>Remove from list</span>
-                </div>
-
+            <div class="card-item-bottom">
+              <span>Add to people list</span>
             </div>
+          </div>
 
+          <div class="card-item">
+            <div class="card-item-top">
+              <div class="icon-box" id="third">
+                <img
+                  src="assets/images/icons//dashboard/person.3.fill.svg"
+                  alt="persons.fill"
+                />
+              </div>
+              <div class="count-box"><span>120</span></div>
+            </div>
+            <div class="card-item-bottom">
+              <span>See all gym members</span>
+            </div>
+          </div>
+
+          <div class="card-item">
+            <div class="card-item-top">
+              <div class="icon-box" id="fourth">
+                <img
+                  src="assets/images/icons//dashboard/person.fill.badge.minus.svg"
+                  alt="persons.fill"
+                />
+              </div>
+              <div class="count-box">
+                <button class="button" id="add-button">Remove</button>
+              </div>
+            </div>
+            <div class="card-item-bottom">
+              <span>Remove from list</span>
+            </div>
+          </div>
         </div>
 
         <div class="gym-members-scroll-view">
-            <div class="member">
-                <div class="member-image"><img src="assets/images/persons/gym-person-avatar.jpeg" alt=""></div>
-                <div class="name-and-joining">
-                    <div class="member-name">John Doe</div>
-                    <div class="member-joining-date">Joined since 2022</div>
-                </div> 
+          <div class="member">
+            <div class="member-image">
+              <img src="assets/images/persons/gym-person-avatar.jpeg" alt="" />
             </div>
-
-            <div class="member">
-                <div class="member-image"><img src="assets/images/persons/gym-person-avatar.jpeg" alt=""></div>
-                <div class="name-and-joining">
-                    <div class="member-name">John Doe</div>
-                    <div class="member-joining-date">Joined since 2022</div>
-                </div> 
+            <div class="name-and-joining">
+              <div class="member-name">John Doe</div>
+              <div class="member-joining-date">Joined since 2022</div>
             </div>
+          </div>
 
-            <div class="member">
-                <div class="member-image"><img src="assets/images/persons/gym-person-avatar.jpeg" alt=""></div>
-                <div class="name-and-joining">
-                    <div class="member-name">John Doe</div>
-                    <div class="member-joining-date">Joined since 2022</div>
-                </div> 
+          <div class="member">
+            <div class="member-image">
+              <img src="assets/images/persons/gym-person-avatar.jpeg" alt="" />
             </div>
-
-            <div class="member">
-                <div class="member-image"><img src="assets/images/persons/gym-person-avatar.jpeg" alt=""></div>
-                <div class="name-and-joining">
-                    <div class="member-name">John Doe</div>
-                    <div class="member-joining-date">Joined since 2022</div>
-                </div> 
+            <div class="name-and-joining">
+              <div class="member-name">John Doe</div>
+              <div class="member-joining-date">Joined since 2022</div>
             </div>
+          </div>
 
-            <div class="member">
-                <div class="member-image"><img src="assets/images/persons/gym-person-avatar.jpeg" alt=""></div>
-                <div class="name-and-joining">
-                    <div class="member-name">John Doe</div>
-                    <div class="member-joining-date">Joined since 2022</div>
-                </div> 
+          <div class="member">
+            <div class="member-image">
+              <img src="assets/images/persons/gym-person-avatar.jpeg" alt="" />
             </div>
-
-            <div class="member">
-                <div class="member-image"><img src="assets/images/persons/gym-person-avatar.jpeg" alt=""></div>
-                <div class="name-and-joining">
-                    <div class="member-name">John Doe</div>
-                    <div class="member-joining-date">Joined since 2022</div>
-                </div> 
+            <div class="name-and-joining">
+              <div class="member-name">John Doe</div>
+              <div class="member-joining-date">Joined since 2022</div>
             </div>
+          </div>
 
-            <div class="member">
-                <div class="member-image"><img src="assets/images/persons/gym-person-avatar.jpeg" alt=""></div>
-                <div class="name-and-joining">
-                    <div class="member-name">John Doe</div>
-                    <div class="member-joining-date">Joined since 2022</div>
-                </div> 
+          <div class="member">
+            <div class="member-image">
+              <img src="assets/images/persons/gym-person-avatar.jpeg" alt="" />
             </div>
-
-            <div class="member">
-                <div class="member-image"><img src="assets/images/persons/gym-person-avatar.jpeg" alt=""></div>
-                <div class="name-and-joining">
-                    <div class="member-name">John Doe</div>
-                    <div class="member-joining-date">Joined since 2022</div>
-                </div> 
+            <div class="name-and-joining">
+              <div class="member-name">John Doe</div>
+              <div class="member-joining-date">Joined since 2022</div>
             </div>
+          </div>
 
-            <div class="member">
-                <div class="member-image"><img src="assets/images/persons/gym-person-avatar.jpeg" alt=""></div>
-                <div class="name-and-joining">
-                    <div class="member-name">John Doe</div>
-                    <div class="member-joining-date">Joined since 2022</div>
-                </div> 
+          <div class="member">
+            <div class="member-image">
+              <img src="assets/images/persons/gym-person-avatar.jpeg" alt="" />
             </div>
-
-            <div class="member">
-                <div class="member-image"><img src="assets/images/persons/gym-person-avatar.jpeg" alt=""></div>
-                <div class="name-and-joining">
-                    <div class="member-name">John Doe</div>
-                    <div class="member-joining-date">Joined since 2022</div>
-                </div> 
+            <div class="name-and-joining">
+              <div class="member-name">John Doe</div>
+              <div class="member-joining-date">Joined since 2022</div>
             </div>
+          </div>
 
-            <div class="member">
-                <div class="member-image"><img src="assets/images/persons/gym-person-avatar.jpeg" alt=""></div>
-                <div class="name-and-joining">
-                    <div class="member-name">John Doe</div>
-                    <div class="member-joining-date">Joined since 2022</div>
-                </div> 
+          <div class="member">
+            <div class="member-image">
+              <img src="assets/images/persons/gym-person-avatar.jpeg" alt="" />
             </div>
-
-            <div class="member">
-                <div class="member-image"><img src="assets/images/persons/gym-person-avatar.jpeg" alt=""></div>
-                <div class="name-and-joining">
-                    <div class="member-name">John Doe</div>
-                    <div class="member-joining-date">Joined since 2022</div>
-                </div> 
+            <div class="name-and-joining">
+              <div class="member-name">John Doe</div>
+              <div class="member-joining-date">Joined since 2022</div>
             </div>
+          </div>
 
-            <div class="member">
-                <div class="member-image"><img src="assets/images/persons/gym-person-avatar.jpeg" alt=""></div>
-                <div class="name-and-joining">
-                    <div class="member-name">John Doe</div>
-                    <div class="member-joining-date">Joined since 2022</div>
-                </div> 
+          <div class="member">
+            <div class="member-image">
+              <img src="assets/images/persons/gym-person-avatar.jpeg" alt="" />
             </div>
-    
-       </div>
-    
-    </div>
+            <div class="name-and-joining">
+              <div class="member-name">John Doe</div>
+              <div class="member-joining-date">Joined since 2022</div>
+            </div>
+          </div>
 
+          <div class="member">
+            <div class="member-image">
+              <img src="assets/images/persons/gym-person-avatar.jpeg" alt="" />
+            </div>
+            <div class="name-and-joining">
+              <div class="member-name">John Doe</div>
+              <div class="member-joining-date">Joined since 2022</div>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="member-image">
+              <img src="assets/images/persons/gym-person-avatar.jpeg" alt="" />
+            </div>
+            <div class="name-and-joining">
+              <div class="member-name">John Doe</div>
+              <div class="member-joining-date">Joined since 2022</div>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="member-image">
+              <img src="assets/images/persons/gym-person-avatar.jpeg" alt="" />
+            </div>
+            <div class="name-and-joining">
+              <div class="member-name">John Doe</div>
+              <div class="member-joining-date">Joined since 2022</div>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="member-image">
+              <img src="assets/images/persons/gym-person-avatar.jpeg" alt="" />
+            </div>
+            <div class="name-and-joining">
+              <div class="member-name">John Doe</div>
+              <div class="member-joining-date">Joined since 2022</div>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="member-image">
+              <img src="assets/images/persons/gym-person-avatar.jpeg" alt="" />
+            </div>
+            <div class="name-and-joining">
+              <div class="member-name">John Doe</div>
+              <div class="member-joining-date">Joined since 2022</div>
+            </div>
+          </div>
+
+          <div class="member">
+            <div class="member-image">
+              <img src="assets/images/persons/gym-person-avatar.jpeg" alt="" />
+            </div>
+            <div class="name-and-joining">
+              <div class="member-name">John Doe</div>
+              <div class="member-joining-date">Joined since 2022</div>
+            </div>
+          </div>
+        </div>
+      </div>
     </main>
-
-</body>
-
+    <script src="js/script.js"></script>
+  </body>
 </html>
