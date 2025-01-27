@@ -292,6 +292,7 @@
 				DEVELOPMENT_TEAM = T297WAFH5U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mobile-frontend/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = GMS;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
@@ -321,6 +322,7 @@
 				DEVELOPMENT_TEAM = T297WAFH5U;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "mobile-frontend/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = GMS;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.sports";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
