@@ -16,24 +16,37 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKu-no-Tjh" customClass="InputField" customModule="GMS" customModuleProvider="target">
-                                <rect key="frame" x="10" y="69" width="373" height="70"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="70" id="NZj-zx-Tto"/>
-                                </constraints>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vXo-3T-vzc">
+                                <rect key="frame" x="20" y="59" width="353" height="160"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKu-no-Tjh" customClass="InputField" customModule="GMS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="ohj-cr-L98"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPx-pE-FtA" customClass="DropDownInputField" customModule="GMS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="90" width="353" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="xQn-xd-jql"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="dKu-no-Tjh" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="10" id="cxO-jT-S4P"/>
-                            <constraint firstItem="dKu-no-Tjh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="kQA-CG-sXh"/>
-                            <constraint firstAttribute="trailing" secondItem="dKu-no-Tjh" secondAttribute="trailing" constant="10" id="zsY-Sg-sEc"/>
+                            <constraint firstItem="vXo-3T-vzc" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="PUf-IS-HWV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vXo-3T-vzc" secondAttribute="trailing" constant="20" id="W54-je-cxp"/>
+                            <constraint firstItem="vXo-3T-vzc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="zyj-K9-myC"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="nameInputField" destination="dKu-no-Tjh" id="kof-ib-MCt"/>
+                        <outlet property="roleDropDownInputField" destination="IPx-pE-FtA" id="qZF-Uj-Kl3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>

@@ -28,8 +28,9 @@ public class InputField: UIView {
         addSubview(containerView)
         containerView.frame = self.bounds
         containerView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
+        inputTextField.styleBorder()
     }
-     
+    
     /// Configures the input field.
     /// - Parameters:
     ///   - heading: The heading or title for the input field.
@@ -46,4 +47,6 @@ public class InputField: UIView {
             self.inputTextField.isSecureTextEntry = false
         }
     }
+    
+    
 }

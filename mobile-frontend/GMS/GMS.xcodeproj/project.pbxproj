@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		60900DCCD3F2DE95506E7DC0 /* Pods_GMS_GMSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6679E93D0F7B0E8628E9CF2 /* Pods_GMS_GMSUITests.framework */; };
 		685C7EA39F4AF747542C61A2 /* Pods_GMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4E5CBDAE68D1982F9DF22 /* Pods_GMS.framework */; };
+		832234072D4943DE0026BE8F /* DropDownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832234062D4943DD0026BE8F /* DropDownTextField.swift */; };
+		832234092D4943F30026BE8F /* DropDownTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832234082D4943F30026BE8F /* DropDownTextField.xib */; };
+		8322340F2D494ADF0026BE8F /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322340E2D494ADF0026BE8F /* Extension+UITextField.swift */; };
 		8335F27F2D48F8FE0055F0BE /* DropDownInputField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8335F26F2D48F8FE0055F0BE /* DropDownInputField.xib */; };
 		8335F2802D48F8FE0055F0BE /* InputField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8335F2722D48F8FE0055F0BE /* InputField.xib */; };
 		8335F2812D48F8FE0055F0BE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8335F2762D48F8FE0055F0BE /* Assets.xcassets */; };
@@ -44,6 +47,9 @@
 		0264D2EE6231C1B51F956BD4 /* Pods-GMSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMSTests.debug.xcconfig"; path = "Target Support Files/Pods-GMSTests/Pods-GMSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		359F717C01E5258ED77C890A /* Pods-GMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMS.debug.xcconfig"; path = "Target Support Files/Pods-GMS/Pods-GMS.debug.xcconfig"; sourceTree = "<group>"; };
 		42F4E5CBDAE68D1982F9DF22 /* Pods_GMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		832234062D4943DD0026BE8F /* DropDownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextField.swift; sourceTree = "<group>"; };
+		832234082D4943F30026BE8F /* DropDownTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownTextField.xib; sourceTree = "<group>"; };
+		8322340E2D494ADF0026BE8F /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
 		8335F1D62D48F7420055F0BE /* GMS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GMS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8335F1EC2D48F7450055F0BE /* GMSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMSTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8335F1F62D48F7450055F0BE /* GMSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GMSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +99,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8322340A2D49450F0026BE8F /* Drop Down Text Field */ = {
+			isa = PBXGroup;
+			children = (
+				832234062D4943DD0026BE8F /* DropDownTextField.swift */,
+				832234082D4943F30026BE8F /* DropDownTextField.xib */,
+			);
+			path = "Drop Down Text Field";
+			sourceTree = "<group>";
+		};
+		8322340D2D494AB40026BE8F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8322340E2D494ADF0026BE8F /* Extension+UITextField.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		8335F1CD2D48F7420055F0BE = {
 			isa = PBXGroup;
 			children = (
@@ -152,6 +175,7 @@
 			children = (
 				8335F2702D48F8FE0055F0BE /* Drop Down Input Field */,
 				8335F2732D48F8FE0055F0BE /* Input Field */,
+				8322340A2D49450F0026BE8F /* Drop Down Text Field */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -159,6 +183,7 @@
 		8335F27E2D48F8FE0055F0BE /* GMS */ = {
 			isa = PBXGroup;
 			children = (
+				8322340D2D494AB40026BE8F /* Extensions */,
 				8335F2742D48F8FE0055F0BE /* Components */,
 				8335F2752D48F8FE0055F0BE /* AppDelegate.swift */,
 				8335F2762D48F8FE0055F0BE /* Assets.xcassets */,
@@ -303,6 +328,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832234092D4943F30026BE8F /* DropDownTextField.xib in Resources */,
 				8335F27F2D48F8FE0055F0BE /* DropDownInputField.xib in Resources */,
 				8335F2802D48F8FE0055F0BE /* InputField.xib in Resources */,
 				8335F2812D48F8FE0055F0BE /* Assets.xcassets in Resources */,
@@ -435,6 +461,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				832234072D4943DE0026BE8F /* DropDownTextField.swift in Sources */,
+				8322340F2D494ADF0026BE8F /* Extension+UITextField.swift in Sources */,
 				8335F2852D48F8FE0055F0BE /* DropDownInputField.swift in Sources */,
 				8335F2862D48F8FE0055F0BE /* InputField.swift in Sources */,
 				8335F2872D48F8FE0055F0BE /* AppDelegate.swift in Sources */,
