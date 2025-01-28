@@ -1,0 +1,20 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '15.0'
+
+target 'GMS' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for GMS
+  pod 'DropDown'
+
+  target 'GMSTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'GMSUITests' do
+    # Pods for testing
+  end
+
+end
