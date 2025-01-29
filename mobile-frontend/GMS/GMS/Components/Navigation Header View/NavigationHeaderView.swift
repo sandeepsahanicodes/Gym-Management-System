@@ -33,14 +33,19 @@ class NavigationHeaderView: UIView {
     
     private func setUpAvatar() {
         self.headerAvatarBtn.makeCircular()
+        self.headerAvatarBtn.imageView?.contentMode = .scaleAspectFill
     }
     
-    public func configure(heading: String, avatarImage: String? = nil) {
+    public func configure(heading: String, avatarImage: String? = nil, isAvatarHidden: Bool = false) {
         self.navigationHeading.text = heading
         if let avatarImage = avatarImage {
             self.headerAvatarBtn.setImage(UIImage(named: avatarImage), for: .normal)
         } else {
             self.headerAvatarBtn.setImage(UIImage(systemName: "person.circle.fill"), for: .normal)
+        }
+        
+        if(isAvatarHidden) {
+            self.headerAvatarBtn.isHidden = true
         }
     }
 }

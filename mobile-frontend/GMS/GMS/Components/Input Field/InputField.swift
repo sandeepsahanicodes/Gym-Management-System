@@ -28,7 +28,9 @@ public class InputField: UIView {
         addSubview(containerView)
         containerView.frame = self.bounds
         containerView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
+        inputTextField.placeholderColor()
         inputTextField.styleBorder()
+        
     }
     
     /// Configures the input field.

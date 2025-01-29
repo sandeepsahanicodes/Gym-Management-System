@@ -46,6 +46,7 @@ class DropDownTextField: UIView {
         addSubview(containerView)
         containerView.frame = self.bounds
         containerView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
+        inputTextField.placeholderColor()
         inputTextField.styleBorder()
     }
     

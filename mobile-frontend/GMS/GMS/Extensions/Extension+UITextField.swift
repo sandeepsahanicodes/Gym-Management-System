@@ -13,4 +13,11 @@ extension UITextField {
         self.layer.borderWidth = width
         self.layer.cornerRadius = cornerRadius
     }
+    
+    public func placeholderColor(color: UIColor = .lightGray) {
+        attributedPlaceholder = NSAttributedString(
+            string: "Placeholder Text",
+            attributes: [NSAttributedString.Key.foregroundColor: color]
+        )
+    }
 }
