@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		60900DCCD3F2DE95506E7DC0 /* Pods_GMS_GMSUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E6679E93D0F7B0E8628E9CF2 /* Pods_GMS_GMSUITests.framework */; };
 		685C7EA39F4AF747542C61A2 /* Pods_GMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4E5CBDAE68D1982F9DF22 /* Pods_GMS.framework */; };
+		8302A06F2D4A7442000E4C92 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302A06E2D4A7442000E4C92 /* Extension+UIView.swift */; };
+		8302A0712D4A799C000E4C92 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302A0702D4A799C000E4C92 /* Extension+UIColor.swift */; };
 		832234072D4943DE0026BE8F /* DropDownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832234062D4943DD0026BE8F /* DropDownTextField.swift */; };
 		832234092D4943F30026BE8F /* DropDownTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832234082D4943F30026BE8F /* DropDownTextField.xib */; };
 		8322340F2D494ADF0026BE8F /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322340E2D494ADF0026BE8F /* Extension+UITextField.swift */; };
@@ -22,6 +24,11 @@
 		8335F2872D48F8FE0055F0BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335F2752D48F8FE0055F0BE /* AppDelegate.swift */; };
 		8335F2882D48F8FE0055F0BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335F27C2D48F8FE0055F0BE /* SceneDelegate.swift */; };
 		8335F2892D48F8FE0055F0BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335F27D2D48F8FE0055F0BE /* ViewController.swift */; };
+		83666B482D4A49A200B6F368 /* NavigationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83666B472D4A49A200B6F368 /* NavigationHeaderView.swift */; };
+		83666B4A2D4A4A7500B6F368 /* NavigationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83666B492D4A4A7500B6F368 /* NavigationHeaderView.xib */; };
+		83666B4C2D4A51B700B6F368 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83666B4B2D4A51B700B6F368 /* DashboardVC.swift */; };
+		83888F0F2D4A356F0023CD61 /* DashboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83888F0E2D4A356F0023CD61 /* DashboardCard.swift */; };
+		83888F112D4A35840023CD61 /* DashboardCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83888F102D4A35840023CD61 /* DashboardCard.xib */; };
 		9021A808B9FF4D826E8E25D1 /* Pods_GMSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB7A846DE0D474A578F1EB7 /* Pods_GMSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +54,8 @@
 		0264D2EE6231C1B51F956BD4 /* Pods-GMSTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMSTests.debug.xcconfig"; path = "Target Support Files/Pods-GMSTests/Pods-GMSTests.debug.xcconfig"; sourceTree = "<group>"; };
 		359F717C01E5258ED77C890A /* Pods-GMS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMS.debug.xcconfig"; path = "Target Support Files/Pods-GMS/Pods-GMS.debug.xcconfig"; sourceTree = "<group>"; };
 		42F4E5CBDAE68D1982F9DF22 /* Pods_GMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8302A06E2D4A7442000E4C92 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		8302A0702D4A799C000E4C92 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
 		832234062D4943DD0026BE8F /* DropDownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextField.swift; sourceTree = "<group>"; };
 		832234082D4943F30026BE8F /* DropDownTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownTextField.xib; sourceTree = "<group>"; };
 		8322340E2D494ADF0026BE8F /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
@@ -64,6 +73,11 @@
 		8335F27A2D48F8FE0055F0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8335F27C2D48F8FE0055F0BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8335F27D2D48F8FE0055F0BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		83666B472D4A49A200B6F368 /* NavigationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHeaderView.swift; sourceTree = "<group>"; };
+		83666B492D4A4A7500B6F368 /* NavigationHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationHeaderView.xib; sourceTree = "<group>"; };
+		83666B4B2D4A51B700B6F368 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		83888F0E2D4A356F0023CD61 /* DashboardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCard.swift; sourceTree = "<group>"; };
+		83888F102D4A35840023CD61 /* DashboardCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCard.xib; sourceTree = "<group>"; };
 		83AD96DF45D43ADDE195E06B /* Pods-GMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMS.release.xcconfig"; path = "Target Support Files/Pods-GMS/Pods-GMS.release.xcconfig"; sourceTree = "<group>"; };
 		944468CFD4E3AF3FA11AEE34 /* Pods-GMS-GMSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMS-GMSUITests.debug.xcconfig"; path = "Target Support Files/Pods-GMS-GMSUITests/Pods-GMS-GMSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBB61CBABC85EF90D614B16A /* Pods-GMS-GMSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMS-GMSUITests.release.xcconfig"; path = "Target Support Files/Pods-GMS-GMSUITests/Pods-GMS-GMSUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -112,6 +126,8 @@
 			isa = PBXGroup;
 			children = (
 				8322340E2D494ADF0026BE8F /* Extension+UITextField.swift */,
+				8302A06E2D4A7442000E4C92 /* Extension+UIView.swift */,
+				8302A0702D4A799C000E4C92 /* Extension+UIColor.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -176,6 +192,8 @@
 				8335F2702D48F8FE0055F0BE /* Drop Down Input Field */,
 				8335F2732D48F8FE0055F0BE /* Input Field */,
 				8322340A2D49450F0026BE8F /* Drop Down Text Field */,
+				83888F122D4A358C0023CD61 /* Dashboard Card */,
+				83666B4F2D4A635B00B6F368 /* Navigation Header View */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -192,8 +210,27 @@
 				8335F27B2D48F8FE0055F0BE /* Main.storyboard */,
 				8335F27C2D48F8FE0055F0BE /* SceneDelegate.swift */,
 				8335F27D2D48F8FE0055F0BE /* ViewController.swift */,
+				83666B4B2D4A51B700B6F368 /* DashboardVC.swift */,
 			);
 			path = GMS;
+			sourceTree = "<group>";
+		};
+		83666B4F2D4A635B00B6F368 /* Navigation Header View */ = {
+			isa = PBXGroup;
+			children = (
+				83666B472D4A49A200B6F368 /* NavigationHeaderView.swift */,
+				83666B492D4A4A7500B6F368 /* NavigationHeaderView.xib */,
+			);
+			path = "Navigation Header View";
+			sourceTree = "<group>";
+		};
+		83888F122D4A358C0023CD61 /* Dashboard Card */ = {
+			isa = PBXGroup;
+			children = (
+				83888F0E2D4A356F0023CD61 /* DashboardCard.swift */,
+				83888F102D4A35840023CD61 /* DashboardCard.xib */,
+			);
+			path = "Dashboard Card";
 			sourceTree = "<group>";
 		};
 		D15D941E0B427CCA4372A927 /* Frameworks */ = {
@@ -329,10 +366,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				832234092D4943F30026BE8F /* DropDownTextField.xib in Resources */,
+				83888F112D4A35840023CD61 /* DashboardCard.xib in Resources */,
 				8335F27F2D48F8FE0055F0BE /* DropDownInputField.xib in Resources */,
 				8335F2802D48F8FE0055F0BE /* InputField.xib in Resources */,
 				8335F2812D48F8FE0055F0BE /* Assets.xcassets in Resources */,
 				8335F2832D48F8FE0055F0BE /* LaunchScreen.storyboard in Resources */,
+				83666B4A2D4A4A7500B6F368 /* NavigationHeaderView.xib in Resources */,
 				8335F2842D48F8FE0055F0BE /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -461,13 +500,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83888F0F2D4A356F0023CD61 /* DashboardCard.swift in Sources */,
+				83666B4C2D4A51B700B6F368 /* DashboardVC.swift in Sources */,
 				832234072D4943DE0026BE8F /* DropDownTextField.swift in Sources */,
 				8322340F2D494ADF0026BE8F /* Extension+UITextField.swift in Sources */,
+				8302A06F2D4A7442000E4C92 /* Extension+UIView.swift in Sources */,
 				8335F2852D48F8FE0055F0BE /* DropDownInputField.swift in Sources */,
 				8335F2862D48F8FE0055F0BE /* InputField.swift in Sources */,
+				83666B482D4A49A200B6F368 /* NavigationHeaderView.swift in Sources */,
 				8335F2872D48F8FE0055F0BE /* AppDelegate.swift in Sources */,
 				8335F2882D48F8FE0055F0BE /* SceneDelegate.swift in Sources */,
 				8335F2892D48F8FE0055F0BE /* ViewController.swift in Sources */,
+				8302A0712D4A799C000E4C92 /* Extension+UIColor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

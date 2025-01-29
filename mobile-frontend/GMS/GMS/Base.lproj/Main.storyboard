@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="23504" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eul-rj-ges">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Login-->
         <scene sceneID="tne-QT-ifu">
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="GMS" customModuleProvider="target" sceneMemberID="viewController">
@@ -17,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="vXo-3T-vzc">
-                                <rect key="frame" x="20" y="59" width="353" height="160"/>
+                                <rect key="frame" x="20" y="102.99999999999997" width="353" height="394.33333333333326"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKu-no-Tjh" customClass="InputField" customModule="GMS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="70"/>
@@ -26,13 +27,35 @@
                                             <constraint firstAttribute="height" constant="70" id="ohj-cr-L98"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPx-pE-FtA" customClass="DropDownInputField" customModule="GMS" customModuleProvider="target">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yxy-mp-2JP" customClass="InputField" customModule="GMS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="90" width="353" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="vkV-Fv-K44"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bxS-HP-bIj" customClass="InputField" customModule="GMS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="180" width="353" height="70"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="70" id="VnP-rD-Fow"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IPx-pE-FtA" customClass="DropDownInputField" customModule="GMS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="270" width="353" height="70"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="70" id="xQn-xd-jql"/>
                                         </constraints>
                                     </view>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNm-9j-bd8">
+                                        <rect key="frame" x="0.0" y="360" width="353" height="34.333333333333314"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <connections>
+                                            <segue destination="LYd-tl-grt" kind="show" id="sgr-ss-Rpy"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                             </stackView>
                         </subviews>
@@ -44,17 +67,315 @@
                             <constraint firstItem="vXo-3T-vzc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="20" id="zyj-K9-myC"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" title="Login" largeTitleDisplayMode="always" id="Ece-mK-zQu"/>
                     <connections>
+                        <outlet property="emailInputField" destination="yxy-mp-2JP" id="j0V-fo-fxC"/>
                         <outlet property="nameInputField" destination="dKu-no-Tjh" id="kof-ib-MCt"/>
+                        <outlet property="passwordInputField" destination="bxS-HP-bIj" id="9Do-C8-slS"/>
                         <outlet property="roleDropDownInputField" destination="IPx-pE-FtA" id="qZF-Uj-Kl3"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="138.1679389312977" y="-2.1126760563380285"/>
+            <point key="canvasLocation" x="1263" y="11"/>
+        </scene>
+        <!--Diet Plan-->
+        <scene sceneID="HEB-8M-2ve">
+            <objects>
+                <viewController id="cii-yV-QRx" customClass="DashboardVC" customModule="GMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qcE-I9-zAc">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NRo-kK-Xix" customClass="NavigationHeaderView" customModule="GMS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nbA-gm-bj0"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TwA-jL-QuU">
+                                <rect key="frame" x="20" y="154" width="353" height="260"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="pNw-Ra-fbh">
+                                        <rect key="frame" x="0.0" y="0.0" width="353" height="125"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uRR-pk-alc" customClass="DashboardCard" customModule="GMS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="125"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qZk-ys-sGs" customClass="DashboardCard" customModule="GMS" customModuleProvider="target">
+                                                <rect key="frame" x="181.66666666666663" y="0.0" width="171.33333333333337" height="125"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="JBM-Oq-zRS"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="u3i-H4-7Dn">
+                                        <rect key="frame" x="0.0" y="135" width="353" height="125"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Ac-RC-dwp" customClass="DashboardCard" customModule="GMS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="171.66666666666666" height="125"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Adx-a0-9nV" customClass="DashboardCard" customModule="GMS" customModuleProvider="target">
+                                                <rect key="frame" x="181.66666666666663" y="0.0" width="171.33333333333337" height="125"/>
+                                            </view>
+                                        </subviews>
+                                        <viewLayoutGuide key="safeArea" id="OXk-lm-1Jo"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="125" id="Ewd-xu-Mch"/>
+                                        </constraints>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="260" id="UFR-aU-7ic"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="h04-rW-iso"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="TwA-jL-QuU" secondAttribute="trailing" constant="20" id="3hg-0o-QwF"/>
+                            <constraint firstItem="TwA-jL-QuU" firstAttribute="leading" secondItem="qcE-I9-zAc" secondAttribute="leading" constant="20" id="PaP-Bm-RGW"/>
+                            <constraint firstItem="h04-rW-iso" firstAttribute="trailing" secondItem="NRo-kK-Xix" secondAttribute="trailing" id="Xf4-RU-EyR"/>
+                            <constraint firstItem="NRo-kK-Xix" firstAttribute="leading" secondItem="h04-rW-iso" secondAttribute="leading" id="b4h-qe-jFA"/>
+                            <constraint firstItem="TwA-jL-QuU" firstAttribute="top" secondItem="NRo-kK-Xix" secondAttribute="bottom" constant="45" id="cXZ-hX-OEF"/>
+                            <constraint firstItem="NRo-kK-Xix" firstAttribute="top" secondItem="h04-rW-iso" secondAttribute="top" id="vbU-yj-sbi"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Diet Plan" id="0dw-Mb-uEe">
+                        <imageReference key="image" image="list.bullet.clipboard.fill" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="WOh-Nu-k2h">
+                        <nil key="title"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="dueCard" destination="9Ac-RC-dwp" id="oKi-Hj-ynF"/>
+                        <outlet property="feePaidCard" destination="Adx-a0-9nV" id="rMy-Be-fvD"/>
+                        <outlet property="membershipCard" destination="qZk-ys-sGs" id="0CE-dI-cH6"/>
+                        <outlet property="navigationHeader" destination="NRo-kK-Xix" id="7sY-Fw-O5z"/>
+                        <outlet property="peoplesCard" destination="uRR-pk-alc" id="RYn-OY-WnZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UX2-TU-8uh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3617.5572519083967" y="826.76056338028172"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="TsN-0e-pOF">
+            <objects>
+                <navigationController id="n5V-jt-cui" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="pYg-5g-3ZL"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="2Dg-xb-fZE">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="yEw-rk-J6e" kind="relationship" relationship="rootViewController" id="qWq-o5-zy1"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TcP-LK-4Yh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4700" y="56"/>
+        </scene>
+        <!--Diet Plan-->
+        <scene sceneID="JFI-La-vZT">
+            <objects>
+                <viewController id="yEw-rk-J6e" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8a6-rV-zLb">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="6ta-ym-fQp"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dashboard" id="PWP-NL-D5F">
+                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
+                    <navigationItem key="navigationItem" title="Diet Plan" id="MGx-uE-us3"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kOl-sr-LWD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4700" y="827"/>
+        </scene>
+        <!--Post-->
+        <scene sceneID="mLa-61-7PG">
+            <objects>
+                <viewController id="MKA-n5-oOC" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="e1A-w5-MlB">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="uZe-kI-QVB"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Post" image="plus.app" catalog="system" id="8of-OO-bBj"/>
+                    <navigationItem key="navigationItem" title="Post" id="tvJ-Tv-CvJ"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LEm-Xh-8VN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5796" y="827"/>
+        </scene>
+        <!--Workouts-->
+        <scene sceneID="zrr-m4-boX">
+            <objects>
+                <viewController id="nyf-3D-Eqz" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bIZ-LE-UQE">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="q98-Fn-Ebf"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Workouts" image="figure.walk.treadmill" catalog="system" id="dBf-f0-1dq"/>
+                    <navigationItem key="navigationItem" title="Workouts" id="W3X-NI-vpH"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="A1L-oq-SLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6720" y="827"/>
+        </scene>
+        <!--Explore members-->
+        <scene sceneID="q7s-Tc-56U">
+            <objects>
+                <viewController id="oUu-NQ-C5H" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="pNL-Pd-nVp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="jl0-eg-OiY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Explore" image="person.line.dotted.person" catalog="system" id="Yce-2P-Ods"/>
+                    <navigationItem key="navigationItem" title="Explore members" largeTitleDisplayMode="always" id="x58-15-rOY"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3FY-zT-n0p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7743" y="827"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="BBt-Zd-ACW">
+            <objects>
+                <tabBarController id="LYd-tl-grt" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="C9m-ZX-fYf"/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="NM8-QN-Ngz">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="jAE-WP-LMR" kind="relationship" relationship="viewControllers" id="eMP-Vs-7LD"/>
+                        <segue destination="n5V-jt-cui" kind="relationship" relationship="viewControllers" id="Bos-rV-NQv"/>
+                        <segue destination="zOn-0A-SxN" kind="relationship" relationship="viewControllers" id="6Dd-Ra-Lad"/>
+                        <segue destination="3yV-VM-NRV" kind="relationship" relationship="viewControllers" id="yYQ-DD-Zq9"/>
+                        <segue destination="FB3-gh-ZDF" kind="relationship" relationship="viewControllers" id="g9F-Gd-Mrl"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ecW-wp-EqI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5795" y="-1165"/>
+        </scene>
+        <!--Dashboard-->
+        <scene sceneID="zJP-Fz-VAc">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="eul-rj-ges" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Dashboard" id="nXL-yw-ebn">
+                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="medium" variableValue="1"/>
+                    </tabBarItem>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="1vr-Ph-PXw">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="faI-7K-5v6"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DQD-aX-0oO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="199" y="11"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="vFc-vK-0dU">
+            <objects>
+                <navigationController id="3yV-VM-NRV" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="4M1-kW-evf"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="HyK-rQ-P4i">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="nyf-3D-Eqz" kind="relationship" relationship="rootViewController" id="LmR-F1-OCi"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="IYA-Qg-Jyw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6720" y="56"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="GSM-cO-D6b">
+            <objects>
+                <navigationController navigationBarHidden="YES" id="jAE-WP-LMR" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="J4F-qy-uqs"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" translucent="NO" largeTitles="YES" id="hIC-CQ-afW">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" red="0.90442227639999995" green="0.579868838" blue="0.20630135459999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <textAttributes key="titleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                        </textAttributes>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </textAttributes>
+                        <navigationBarAppearance key="standardAppearance" backgroundEffect="prominent" backgroundImage="avatar"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="cii-yV-QRx" kind="relationship" relationship="rootViewController" id="m1u-Gy-T3S"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FgV-fB-hiK" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3619" y="57"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Qyu-lC-Md1">
+            <objects>
+                <navigationController id="zOn-0A-SxN" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="JXQ-lM-dqX"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="9rZ-V9-oL2">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="MKA-n5-oOC" kind="relationship" relationship="rootViewController" id="tiI-Sn-gGV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Iue-eT-Qeu" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="5795" y="56"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="L9Z-PJ-2xs">
+            <objects>
+                <navigationController id="FB3-gh-ZDF" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="YXh-DD-dW0"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="w0M-Uz-USm">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="oUu-NQ-C5H" kind="relationship" relationship="rootViewController" id="kkW-s3-wqq"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="a8O-3W-Oux" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7743" y="56"/>
         </scene>
     </scenes>
     <resources>
+        <image name="avatar" width="599" height="400"/>
+        <image name="figure.walk.treadmill" catalog="system" width="128" height="110"/>
+        <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="list.bullet.clipboard.fill" catalog="system" width="98" height="128"/>
+        <image name="person.line.dotted.person" catalog="system" width="128" height="59"/>
+        <image name="plus.app" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
