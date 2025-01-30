@@ -11,12 +11,9 @@ class DashboardVC: UIViewController {
 
 
     @IBOutlet weak var navigationHeader: NavigationHeaderView!
-    
     @IBOutlet weak var peoplesCard: DashboardCard!
     @IBOutlet weak var membershipCard: DashboardCard!
-    
     @IBOutlet weak var dueCard: DashboardCard!
-    
     @IBOutlet weak var feePaidCard: DashboardCard!
     
     
@@ -32,6 +29,9 @@ class DashboardVC: UIViewController {
         dueCard.configure(icon: "calendar.badge.clock", iconBgColor: .black, value: "90 days left", cardDescription: "Due")
         
         feePaidCard.configure(icon: "indianrupeesign", iconBgColor: .rupeeGray, value: "10 Dec '25", cardDescription: "Fee Paid")
+        
+        self.tabBarController?.tabBar.tintColor = .black
+        self.tabBarController?.tabBar.unselectedItemTintColor = .black
     }
     
 }

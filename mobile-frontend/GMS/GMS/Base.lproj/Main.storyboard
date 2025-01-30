@@ -84,7 +84,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1263" y="11"/>
+            <point key="canvasLocation" x="1708" y="-1165"/>
         </scene>
         <!--Dashboard-->
         <scene sceneID="HEB-8M-2ve">
@@ -161,7 +161,8 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Dashboard" id="0dw-Mb-uEe">
-                        <imageReference key="image" image="house.fill" catalog="system" symbolScale="medium"/>
+                        <imageReference key="image" image="house" catalog="system" symbolScale="medium"/>
+                        <imageReference key="selectedImage" image="house.fill" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="WOh-Nu-k2h">
                         <nil key="title"/>
@@ -206,7 +207,8 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Diet Plan" id="PWP-NL-D5F">
-                        <imageReference key="image" image="list.bullet.clipboard.fill" catalog="system" symbolScale="medium"/>
+                        <imageReference key="image" image="list.bullet.clipboard" catalog="system" symbolScale="medium"/>
+                        <imageReference key="selectedImage" image="list.bullet.clipboard.fill" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
                     <navigationItem key="navigationItem" title="Diet Plan" id="MGx-uE-us3"/>
                 </viewController>
@@ -240,7 +242,10 @@
                         <viewLayoutGuide key="safeArea" id="uZe-kI-QVB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Post" image="plus.app" catalog="system" id="8of-OO-bBj"/>
+                    <tabBarItem key="tabBarItem" title="Post" id="8of-OO-bBj">
+                        <imageReference key="image" image="plus.app" catalog="system" symbolScale="medium"/>
+                        <imageReference key="selectedImage" image="plus.app.fill" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Post" id="tvJ-Tv-CvJ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LEm-Xh-8VN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -257,7 +262,10 @@
                         <viewLayoutGuide key="safeArea" id="q98-Fn-Ebf"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Workouts" image="figure.walk.treadmill" catalog="system" id="dBf-f0-1dq"/>
+                    <tabBarItem key="tabBarItem" title="Workouts" id="dBf-f0-1dq">
+                        <imageReference key="image" image="dumbbell" catalog="system" symbolScale="medium"/>
+                        <imageReference key="selectedImage" image="dumbbell.fill" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Workouts" id="W3X-NI-vpH"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1L-oq-SLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -274,7 +282,10 @@
                         <viewLayoutGuide key="safeArea" id="jl0-eg-OiY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Explore" image="person.line.dotted.person" catalog="system" id="Yce-2P-Ods"/>
+                    <tabBarItem key="tabBarItem" title="Explore" id="Yce-2P-Ods">
+                        <imageReference key="image" image="person.line.dotted.person" catalog="system" symbolScale="medium"/>
+                        <imageReference key="selectedImage" image="person.line.dotted.person.fill" catalog="system" symbolScale="medium"/>
+                    </tabBarItem>
                     <navigationItem key="navigationItem" title="Explore members" largeTitleDisplayMode="always" id="x58-15-rOY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3FY-zT-n0p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -322,7 +333,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="DQD-aX-0oO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="199" y="11"/>
+            <point key="canvasLocation" x="83" y="-1165"/>
         </scene>
         <!--Item-->
         <scene sceneID="vFc-vK-0dU">
@@ -407,11 +418,16 @@
     </scenes>
     <resources>
         <image name="avatar" width="599" height="400"/>
-        <image name="figure.walk.treadmill" catalog="system" width="128" height="110"/>
+        <image name="dumbbell" catalog="system" width="128" height="72"/>
+        <image name="dumbbell.fill" catalog="system" width="128" height="72"/>
+        <image name="house" catalog="system" width="128" height="104"/>
         <image name="house.fill" catalog="system" width="128" height="104"/>
+        <image name="list.bullet.clipboard" catalog="system" width="98" height="128"/>
         <image name="list.bullet.clipboard.fill" catalog="system" width="98" height="128"/>
         <image name="person.line.dotted.person" catalog="system" width="128" height="59"/>
+        <image name="person.line.dotted.person.fill" catalog="system" width="128" height="59"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
+        <image name="plus.app.fill" catalog="system" width="128" height="114"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
