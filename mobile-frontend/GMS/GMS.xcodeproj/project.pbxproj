@@ -11,6 +11,7 @@
 		685C7EA39F4AF747542C61A2 /* Pods_GMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4E5CBDAE68D1982F9DF22 /* Pods_GMS.framework */; };
 		8302A06F2D4A7442000E4C92 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302A06E2D4A7442000E4C92 /* Extension+UIView.swift */; };
 		8302A0712D4A799C000E4C92 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302A0702D4A799C000E4C92 /* Extension+UIColor.swift */; };
+		8315AFDD2D4BB36E006BE458 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8315AFDC2D4BB36E006BE458 /* CardType.swift */; };
 		832234072D4943DE0026BE8F /* DropDownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832234062D4943DD0026BE8F /* DropDownTextField.swift */; };
 		832234092D4943F30026BE8F /* DropDownTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832234082D4943F30026BE8F /* DropDownTextField.xib */; };
 		8322340F2D494ADF0026BE8F /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322340E2D494ADF0026BE8F /* Extension+UITextField.swift */; };
@@ -23,10 +24,20 @@
 		8335F2862D48F8FE0055F0BE /* InputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335F2712D48F8FE0055F0BE /* InputField.swift */; };
 		8335F2872D48F8FE0055F0BE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335F2752D48F8FE0055F0BE /* AppDelegate.swift */; };
 		8335F2882D48F8FE0055F0BE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335F27C2D48F8FE0055F0BE /* SceneDelegate.swift */; };
-		8335F2892D48F8FE0055F0BE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335F27D2D48F8FE0055F0BE /* ViewController.swift */; };
+		8335F2892D48F8FE0055F0BE /* LoginVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8335F27D2D48F8FE0055F0BE /* LoginVC.swift */; };
 		83666B482D4A49A200B6F368 /* NavigationHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83666B472D4A49A200B6F368 /* NavigationHeaderView.swift */; };
 		83666B4A2D4A4A7500B6F368 /* NavigationHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83666B492D4A4A7500B6F368 /* NavigationHeaderView.xib */; };
 		83666B4C2D4A51B700B6F368 /* DashboardVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83666B4B2D4A51B700B6F368 /* DashboardVC.swift */; };
+		8380F93A2D4B92F900DF61F2 /* testTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380F9392D4B92F900DF61F2 /* testTest.swift */; };
+		8380F93E2D4B9B8F00DF61F2 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8380F93D2D4B9B8F00DF61F2 /* CardTableViewCell.xib */; };
+		8380F93F2D4B9B8F00DF61F2 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380F93C2D4B9B8F00DF61F2 /* CardTableViewCell.swift */; };
+		8380F9452D4B9C4100DF61F2 /* InfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380F9432D4B9C4100DF61F2 /* InfoTableViewCell.swift */; };
+		8380F9462D4B9C4100DF61F2 /* InfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8380F9442D4B9C4100DF61F2 /* InfoTableViewCell.xib */; };
+		8380F9492D4B9C5200DF61F2 /* PersonTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8380F9482D4B9C5200DF61F2 /* PersonTableViewCell.xib */; };
+		8380F94A2D4B9C5200DF61F2 /* PersonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380F9472D4B9C5200DF61F2 /* PersonTableViewCell.swift */; };
+		8380F94E2D4B9D0900DF61F2 /* PostTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380F94C2D4B9D0900DF61F2 /* PostTableViewCell.swift */; };
+		8380F94F2D4B9D0900DF61F2 /* PostTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8380F94D2D4B9D0900DF61F2 /* PostTableViewCell.xib */; };
+		8380F9512D4B9E7B00DF61F2 /* DietPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380F9502D4B9E7B00DF61F2 /* DietPlanVC.swift */; };
 		83888F0F2D4A356F0023CD61 /* DashboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83888F0E2D4A356F0023CD61 /* DashboardCard.swift */; };
 		83888F112D4A35840023CD61 /* DashboardCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83888F102D4A35840023CD61 /* DashboardCard.xib */; };
 		9021A808B9FF4D826E8E25D1 /* Pods_GMSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB7A846DE0D474A578F1EB7 /* Pods_GMSTests.framework */; };
@@ -56,6 +67,7 @@
 		42F4E5CBDAE68D1982F9DF22 /* Pods_GMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8302A06E2D4A7442000E4C92 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		8302A0702D4A799C000E4C92 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		8315AFDC2D4BB36E006BE458 /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
 		832234062D4943DD0026BE8F /* DropDownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextField.swift; sourceTree = "<group>"; };
 		832234082D4943F30026BE8F /* DropDownTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownTextField.xib; sourceTree = "<group>"; };
 		8322340E2D494ADF0026BE8F /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
@@ -72,10 +84,20 @@
 		8335F2782D48F8FE0055F0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8335F27A2D48F8FE0055F0BE /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8335F27C2D48F8FE0055F0BE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		8335F27D2D48F8FE0055F0BE /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		8335F27D2D48F8FE0055F0BE /* LoginVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginVC.swift; sourceTree = "<group>"; };
 		83666B472D4A49A200B6F368 /* NavigationHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationHeaderView.swift; sourceTree = "<group>"; };
 		83666B492D4A4A7500B6F368 /* NavigationHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NavigationHeaderView.xib; sourceTree = "<group>"; };
 		83666B4B2D4A51B700B6F368 /* DashboardVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardVC.swift; sourceTree = "<group>"; };
+		8380F9392D4B92F900DF61F2 /* testTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTest.swift; sourceTree = "<group>"; };
+		8380F93C2D4B9B8F00DF61F2 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
+		8380F93D2D4B9B8F00DF61F2 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
+		8380F9432D4B9C4100DF61F2 /* InfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoTableViewCell.swift; sourceTree = "<group>"; };
+		8380F9442D4B9C4100DF61F2 /* InfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InfoTableViewCell.xib; sourceTree = "<group>"; };
+		8380F9472D4B9C5200DF61F2 /* PersonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonTableViewCell.swift; sourceTree = "<group>"; };
+		8380F9482D4B9C5200DF61F2 /* PersonTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonTableViewCell.xib; sourceTree = "<group>"; };
+		8380F94C2D4B9D0900DF61F2 /* PostTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostTableViewCell.swift; sourceTree = "<group>"; };
+		8380F94D2D4B9D0900DF61F2 /* PostTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostTableViewCell.xib; sourceTree = "<group>"; };
+		8380F9502D4B9E7B00DF61F2 /* DietPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietPlanVC.swift; sourceTree = "<group>"; };
 		83888F0E2D4A356F0023CD61 /* DashboardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCard.swift; sourceTree = "<group>"; };
 		83888F102D4A35840023CD61 /* DashboardCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCard.xib; sourceTree = "<group>"; };
 		83AD96DF45D43ADDE195E06B /* Pods-GMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMS.release.xcconfig"; path = "Target Support Files/Pods-GMS/Pods-GMS.release.xcconfig"; sourceTree = "<group>"; };
@@ -113,6 +135,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8315AFDE2D4BB460006BE458 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				8315AFDC2D4BB36E006BE458 /* CardType.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
 		8322340A2D49450F0026BE8F /* Drop Down Text Field */ = {
 			isa = PBXGroup;
 			children = (
@@ -157,6 +187,7 @@
 		8335F1EF2D48F7450055F0BE /* GMSTests */ = {
 			isa = PBXGroup;
 			children = (
+				8380F9392D4B92F900DF61F2 /* testTest.swift */,
 			);
 			path = GMSTests;
 			sourceTree = "<group>";
@@ -189,6 +220,7 @@
 		8335F2742D48F8FE0055F0BE /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				8380F93B2D4B979300DF61F2 /* Table View Cell */,
 				8335F2702D48F8FE0055F0BE /* Drop Down Input Field */,
 				8335F2732D48F8FE0055F0BE /* Input Field */,
 				8322340A2D49450F0026BE8F /* Drop Down Text Field */,
@@ -209,8 +241,10 @@
 				8335F2792D48F8FE0055F0BE /* LaunchScreen.storyboard */,
 				8335F27B2D48F8FE0055F0BE /* Main.storyboard */,
 				8335F27C2D48F8FE0055F0BE /* SceneDelegate.swift */,
-				8335F27D2D48F8FE0055F0BE /* ViewController.swift */,
+				8335F27D2D48F8FE0055F0BE /* LoginVC.swift */,
 				83666B4B2D4A51B700B6F368 /* DashboardVC.swift */,
+				8380F9502D4B9E7B00DF61F2 /* DietPlanVC.swift */,
+				8315AFDE2D4BB460006BE458 /* Enum */,
 			);
 			path = GMS;
 			sourceTree = "<group>";
@@ -222,6 +256,53 @@
 				83666B492D4A4A7500B6F368 /* NavigationHeaderView.xib */,
 			);
 			path = "Navigation Header View";
+			sourceTree = "<group>";
+		};
+		8380F93B2D4B979300DF61F2 /* Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8380F94B2D4B9CEF00DF61F2 /* Post Table View Cell */,
+				8380F9422D4B9C1B00DF61F2 /* Person Table View Cell */,
+				8380F9412D4B9BD600DF61F2 /* Info Table View Cell */,
+				8380F9402D4B9BA900DF61F2 /* Card Table View Cell */,
+			);
+			path = "Table View Cell";
+			sourceTree = "<group>";
+		};
+		8380F9402D4B9BA900DF61F2 /* Card Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8380F93C2D4B9B8F00DF61F2 /* CardTableViewCell.swift */,
+				8380F93D2D4B9B8F00DF61F2 /* CardTableViewCell.xib */,
+			);
+			path = "Card Table View Cell";
+			sourceTree = "<group>";
+		};
+		8380F9412D4B9BD600DF61F2 /* Info Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8380F9432D4B9C4100DF61F2 /* InfoTableViewCell.swift */,
+				8380F9442D4B9C4100DF61F2 /* InfoTableViewCell.xib */,
+			);
+			path = "Info Table View Cell";
+			sourceTree = "<group>";
+		};
+		8380F9422D4B9C1B00DF61F2 /* Person Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8380F9472D4B9C5200DF61F2 /* PersonTableViewCell.swift */,
+				8380F9482D4B9C5200DF61F2 /* PersonTableViewCell.xib */,
+			);
+			path = "Person Table View Cell";
+			sourceTree = "<group>";
+		};
+		8380F94B2D4B9CEF00DF61F2 /* Post Table View Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8380F94C2D4B9D0900DF61F2 /* PostTableViewCell.swift */,
+				8380F94D2D4B9D0900DF61F2 /* PostTableViewCell.xib */,
+			);
+			path = "Post Table View Cell";
 			sourceTree = "<group>";
 		};
 		83888F122D4A358C0023CD61 /* Dashboard Card */ = {
@@ -332,6 +413,7 @@
 					};
 					8335F1EB2D48F7450055F0BE = {
 						CreatedOnToolsVersion = 16.2;
+						LastSwiftMigration = 1620;
 						TestTargetID = 8335F1D52D48F7420055F0BE;
 					};
 					8335F1F52D48F7450055F0BE = {
@@ -368,11 +450,15 @@
 				832234092D4943F30026BE8F /* DropDownTextField.xib in Resources */,
 				83888F112D4A35840023CD61 /* DashboardCard.xib in Resources */,
 				8335F27F2D48F8FE0055F0BE /* DropDownInputField.xib in Resources */,
+				8380F94F2D4B9D0900DF61F2 /* PostTableViewCell.xib in Resources */,
 				8335F2802D48F8FE0055F0BE /* InputField.xib in Resources */,
 				8335F2812D48F8FE0055F0BE /* Assets.xcassets in Resources */,
+				8380F9462D4B9C4100DF61F2 /* InfoTableViewCell.xib in Resources */,
 				8335F2832D48F8FE0055F0BE /* LaunchScreen.storyboard in Resources */,
 				83666B4A2D4A4A7500B6F368 /* NavigationHeaderView.xib in Resources */,
 				8335F2842D48F8FE0055F0BE /* Main.storyboard in Resources */,
+				8380F9492D4B9C5200DF61F2 /* PersonTableViewCell.xib in Resources */,
+				8380F93E2D4B9B8F00DF61F2 /* CardTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -503,15 +589,21 @@
 				83888F0F2D4A356F0023CD61 /* DashboardCard.swift in Sources */,
 				83666B4C2D4A51B700B6F368 /* DashboardVC.swift in Sources */,
 				832234072D4943DE0026BE8F /* DropDownTextField.swift in Sources */,
+				8380F94A2D4B9C5200DF61F2 /* PersonTableViewCell.swift in Sources */,
 				8322340F2D494ADF0026BE8F /* Extension+UITextField.swift in Sources */,
 				8302A06F2D4A7442000E4C92 /* Extension+UIView.swift in Sources */,
 				8335F2852D48F8FE0055F0BE /* DropDownInputField.swift in Sources */,
 				8335F2862D48F8FE0055F0BE /* InputField.swift in Sources */,
 				83666B482D4A49A200B6F368 /* NavigationHeaderView.swift in Sources */,
+				8380F93F2D4B9B8F00DF61F2 /* CardTableViewCell.swift in Sources */,
 				8335F2872D48F8FE0055F0BE /* AppDelegate.swift in Sources */,
+				8380F94E2D4B9D0900DF61F2 /* PostTableViewCell.swift in Sources */,
 				8335F2882D48F8FE0055F0BE /* SceneDelegate.swift in Sources */,
-				8335F2892D48F8FE0055F0BE /* ViewController.swift in Sources */,
+				8380F9512D4B9E7B00DF61F2 /* DietPlanVC.swift in Sources */,
+				8380F9452D4B9C4100DF61F2 /* InfoTableViewCell.swift in Sources */,
+				8335F2892D48F8FE0055F0BE /* LoginVC.swift in Sources */,
 				8302A0712D4A799C000E4C92 /* Extension+UIColor.swift in Sources */,
+				8315AFDD2D4BB36E006BE458 /* CardType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -519,6 +611,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8380F93A2D4B92F900DF61F2 /* testTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -752,6 +845,7 @@
 			baseConfigurationReference = 0264D2EE6231C1B51F956BD4 /* Pods-GMSTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T297WAFH5U;
@@ -761,6 +855,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.sandeepsahanicodes.GMSTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/GMS.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/GMS";
@@ -772,6 +867,7 @@
 			baseConfigurationReference = 006D3B06CEED1538C29CE675 /* Pods-GMSTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = T297WAFH5U;
