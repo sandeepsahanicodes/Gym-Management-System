@@ -11,7 +11,9 @@
 		685C7EA39F4AF747542C61A2 /* Pods_GMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4E5CBDAE68D1982F9DF22 /* Pods_GMS.framework */; };
 		8302A06F2D4A7442000E4C92 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302A06E2D4A7442000E4C92 /* Extension+UIView.swift */; };
 		8302A0712D4A799C000E4C92 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302A0702D4A799C000E4C92 /* Extension+UIColor.swift */; };
+		8314A47D2D4D2415004C3571 /* MealsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314A47C2D4D2415004C3571 /* MealsVC.swift */; };
 		8315AFDD2D4BB36E006BE458 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8315AFDC2D4BB36E006BE458 /* CardType.swift */; };
+		831A44102D4D3CD000A47067 /* InfoType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 831A440F2D4D3CD000A47067 /* InfoType.swift */; };
 		832234072D4943DE0026BE8F /* DropDownTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 832234062D4943DD0026BE8F /* DropDownTextField.swift */; };
 		832234092D4943F30026BE8F /* DropDownTextField.xib in Resources */ = {isa = PBXBuildFile; fileRef = 832234082D4943F30026BE8F /* DropDownTextField.xib */; };
 		8322340F2D494ADF0026BE8F /* Extension+UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8322340E2D494ADF0026BE8F /* Extension+UITextField.swift */; };
@@ -67,7 +69,9 @@
 		42F4E5CBDAE68D1982F9DF22 /* Pods_GMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8302A06E2D4A7442000E4C92 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		8302A0702D4A799C000E4C92 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		8314A47C2D4D2415004C3571 /* MealsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsVC.swift; sourceTree = "<group>"; };
 		8315AFDC2D4BB36E006BE458 /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
+		831A440F2D4D3CD000A47067 /* InfoType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoType.swift; sourceTree = "<group>"; };
 		832234062D4943DD0026BE8F /* DropDownTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownTextField.swift; sourceTree = "<group>"; };
 		832234082D4943F30026BE8F /* DropDownTextField.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownTextField.xib; sourceTree = "<group>"; };
 		8322340E2D494ADF0026BE8F /* Extension+UITextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UITextField.swift"; sourceTree = "<group>"; };
@@ -135,10 +139,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8314A47E2D4D2C0E004C3571 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8335F27D2D48F8FE0055F0BE /* LoginVC.swift */,
+				83666B4B2D4A51B700B6F368 /* DashboardVC.swift */,
+				8380F9502D4B9E7B00DF61F2 /* DietPlanVC.swift */,
+				8314A47C2D4D2415004C3571 /* MealsVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		8315AFDE2D4BB460006BE458 /* Enum */ = {
 			isa = PBXGroup;
 			children = (
 				8315AFDC2D4BB36E006BE458 /* CardType.swift */,
+				831A440F2D4D3CD000A47067 /* InfoType.swift */,
 			);
 			path = Enum;
 			sourceTree = "<group>";
@@ -241,9 +257,7 @@
 				8335F2792D48F8FE0055F0BE /* LaunchScreen.storyboard */,
 				8335F27B2D48F8FE0055F0BE /* Main.storyboard */,
 				8335F27C2D48F8FE0055F0BE /* SceneDelegate.swift */,
-				8335F27D2D48F8FE0055F0BE /* LoginVC.swift */,
-				83666B4B2D4A51B700B6F368 /* DashboardVC.swift */,
-				8380F9502D4B9E7B00DF61F2 /* DietPlanVC.swift */,
+				8314A47E2D4D2C0E004C3571 /* Controllers */,
 				8315AFDE2D4BB460006BE458 /* Enum */,
 			);
 			path = GMS;
@@ -593,6 +607,7 @@
 				8322340F2D494ADF0026BE8F /* Extension+UITextField.swift in Sources */,
 				8302A06F2D4A7442000E4C92 /* Extension+UIView.swift in Sources */,
 				8335F2852D48F8FE0055F0BE /* DropDownInputField.swift in Sources */,
+				831A44102D4D3CD000A47067 /* InfoType.swift in Sources */,
 				8335F2862D48F8FE0055F0BE /* InputField.swift in Sources */,
 				83666B482D4A49A200B6F368 /* NavigationHeaderView.swift in Sources */,
 				8380F93F2D4B9B8F00DF61F2 /* CardTableViewCell.swift in Sources */,
@@ -601,6 +616,7 @@
 				8335F2882D48F8FE0055F0BE /* SceneDelegate.swift in Sources */,
 				8380F9512D4B9E7B00DF61F2 /* DietPlanVC.swift in Sources */,
 				8380F9452D4B9C4100DF61F2 /* InfoTableViewCell.swift in Sources */,
+				8314A47D2D4D2415004C3571 /* MealsVC.swift in Sources */,
 				8335F2892D48F8FE0055F0BE /* LoginVC.swift in Sources */,
 				8302A0712D4A799C000E4C92 /* Extension+UIColor.swift in Sources */,
 				8315AFDD2D4BB36E006BE458 /* CardType.swift in Sources */,

@@ -30,7 +30,6 @@ public class InputField: UIView {
         containerView.autoresizingMask = [.flexibleHeight,.flexibleWidth]
         inputTextField.placeholderColor()
         inputTextField.styleBorder()
-        
     }
     
     /// Configures the input field.

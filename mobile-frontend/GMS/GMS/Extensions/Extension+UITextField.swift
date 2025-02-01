@@ -8,12 +8,7 @@
 import UIKit
 
 extension UITextField {
-    public func styleBorder(color: UIColor = UIColor.black, width: CGFloat = 1, cornerRadius: CGFloat = 5) {
-        self.layer.borderColor = color.cgColor
-        self.layer.borderWidth = width
-        self.layer.cornerRadius = cornerRadius
-    }
-    
+
     public func placeholderColor(color: UIColor = .lightGray) {
         attributedPlaceholder = NSAttributedString(
             string: "Placeholder Text",

@@ -210,7 +210,7 @@
                                     <constraint firstAttribute="height" constant="50" id="bMb-9O-tnG"/>
                                 </constraints>
                             </view>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="l88-vg-BU7">
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="l88-vg-BU7">
                                 <rect key="frame" x="0.0" y="178" width="393" height="591"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
@@ -255,7 +255,48 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uvp-xC-soh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3590" y="1558"/>
+            <point key="canvasLocation" x="3618" y="1529"/>
+        </scene>
+        <!--MealsVC-->
+        <scene sceneID="Tlu-ng-lmq">
+            <objects>
+                <viewController storyboardIdentifier="MealsVC" id="buA-uk-daK" customClass="MealsVC" customModule="GMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="yVf-6f-6U2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="2aO-sr-vyY" customClass="NavigationHeaderView" customModule="GMS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="383" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Qon-Zi-vB4"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XJc-ND-G5o">
+                                <rect key="frame" x="10" y="134" width="373" height="684"/>
+                                <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KAv-qx-ADI"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="KAv-qx-ADI" firstAttribute="bottom" secondItem="XJc-ND-G5o" secondAttribute="bottom" id="1fe-d7-QfC"/>
+                            <constraint firstItem="XJc-ND-G5o" firstAttribute="top" secondItem="2aO-sr-vyY" secondAttribute="bottom" constant="25" id="6Kx-m8-nj4"/>
+                            <constraint firstItem="2aO-sr-vyY" firstAttribute="leading" secondItem="KAv-qx-ADI" secondAttribute="leading" id="GF3-6M-evR"/>
+                            <constraint firstItem="2aO-sr-vyY" firstAttribute="top" secondItem="KAv-qx-ADI" secondAttribute="top" id="WbC-pP-gjV"/>
+                            <constraint firstItem="KAv-qx-ADI" firstAttribute="trailing" secondItem="2aO-sr-vyY" secondAttribute="trailing" constant="10" id="bLX-I3-noU"/>
+                            <constraint firstItem="KAv-qx-ADI" firstAttribute="trailing" secondItem="XJc-ND-G5o" secondAttribute="trailing" constant="10" id="ixZ-GZ-4N6"/>
+                            <constraint firstItem="XJc-ND-G5o" firstAttribute="leading" secondItem="KAv-qx-ADI" secondAttribute="leading" constant="10" id="vWj-Al-1uh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="mealsTableView" destination="XJc-ND-G5o" id="LTm-hO-fC8"/>
+                        <outlet property="navigationHeaderView" destination="2aO-sr-vyY" id="upe-R4-9fd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xsS-hs-HiO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4760" y="1529"/>
         </scene>
         <!--Post-->
         <scene sceneID="mLa-61-7PG">

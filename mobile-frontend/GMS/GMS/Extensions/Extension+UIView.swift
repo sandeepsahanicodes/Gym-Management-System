@@ -19,4 +19,11 @@ extension UIView {
         self.layer.cornerRadius = value
         self.layer.masksToBounds = true
     }
+    
+    public func styleBorder(color: UIColor = UIColor.black, width: CGFloat = 1, cornerRadius: CGFloat = 5) {
+        self.layer.borderColor = color.cgColor
+        self.layer.borderWidth = width
+        self.layer.cornerRadius = cornerRadius
+    }
+    
 }

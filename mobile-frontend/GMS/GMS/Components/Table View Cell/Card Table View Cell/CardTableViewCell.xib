@@ -50,7 +50,7 @@
                                                             <constraint firstAttribute="height" constant="15" id="LLa-38-iPB"/>
                                                         </constraints>
                                                     </imageView>
-                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fUC-2F-WpE">
+                                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" pointerInteraction="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fUC-2F-WpE">
                                                         <rect key="frame" x="20" y="0.0" width="15" height="15"/>
                                                         <constraints>
                                                             <constraint firstAttribute="height" constant="15" id="85p-ao-LXa"/>
@@ -62,6 +62,9 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <imageReference key="image" image="trash.fill" catalog="system" symbolScale="small"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="deleteBtnTapped:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="fNd-bW-FJg"/>
+                                                        </connections>
                                                     </button>
                                                 </subviews>
                                             </stackView>
@@ -126,7 +129,7 @@
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
             <connections>
-                <outlet property="cardDeleteBtn" destination="fUC-2F-WpE" id="m6f-My-bSl"/>
+                <outlet property="cardDeleteBtn" destination="fUC-2F-WpE" id="504-K9-BEO"/>
                 <outlet property="cardDescription" destination="sNq-XZ-KAS" id="60M-Fx-KlY"/>
                 <outlet property="cardEndDescription" destination="5Fx-1V-JxE" id="Vgx-Wj-uf6"/>
                 <outlet property="cardForegroud" destination="BBu-Vo-zZE" id="eJ5-9c-OU2"/>

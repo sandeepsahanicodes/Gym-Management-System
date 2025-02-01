@@ -7,6 +7,9 @@
 
 import UIKit
 
+protocol CardTableViewCellDelegate: AnyObject {
+    func didTapDeleteButton(cell: CardTableViewCell, didTap button: UIButton)
+}
 class CardTableViewCell: UITableViewCell {
 
     @IBOutlet private weak var cardImage: UIImageView!
@@ -16,6 +19,8 @@ class CardTableViewCell: UITableViewCell {
     @IBOutlet private weak var foodTypeIcon: UIImageView!
     @IBOutlet private weak var cardDeleteBtn: UIButton!
     @IBOutlet private weak var cardEndDescription: UILabel!
+    
+    weak var delegate: CardTableViewCellDelegate?
     
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -34,11 +39,12 @@ class CardTableViewCell: UITableViewCell {
     }
     
     /// Populates data in the card cell.
-    public func configure(cardImage: UIImage, cardName: String, cardDescriptioin: String, cardEndDescription: String?, cardType: CardType) {
+    public func configure(cardImage: UIImage, cardName: String, cardDescriptioin: String, cardEndDescription: String?, cardType: CardType, delegate: CardTableViewCellDelegate) {
         self.cardImage.image = cardImage
         self.cardName.text = cardName
         self.cardDescription.text = cardDescriptioin
         self.cardEndDescription.text = cardEndDescription
+        self.delegate = delegate
         
         switch cardType {
         case .dietUser(isNonVegetarian: true):
@@ -66,6 +72,12 @@ class CardTableViewCell: UITableViewCell {
             self.cardDeleteBtn.setImage(UIImage(systemName: "trash.fill"), for: .normal)
             self.cardEndDescription.text = "Explore workout"
         }
+    }
+    
+    
+    @IBAction func deleteBtnTapped(_ sender: UIButton) {
+       print("In Card Table view cell")
+        delegate?.didTapDeleteButton(cell: self, didTap: sender)
     }
     
 }
