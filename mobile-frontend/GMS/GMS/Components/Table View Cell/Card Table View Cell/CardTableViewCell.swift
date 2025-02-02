@@ -10,6 +10,7 @@ import UIKit
 protocol CardTableViewCellDelegate: AnyObject {
     func didTapDeleteButton(cell: CardTableViewCell, didTap button: UIButton)
 }
+
 class CardTableViewCell: UITableViewCell {
 
     @IBOutlet private weak var cardImage: UIImageView!

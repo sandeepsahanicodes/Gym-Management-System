@@ -44,6 +44,7 @@
                 </imageView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="Ncb-Wu-ABt" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="SeC-FT-csm"/>
                 <constraint firstAttribute="bottom" secondItem="Ncb-Wu-ABt" secondAttribute="bottom" id="SrQ-Yk-qpd"/>

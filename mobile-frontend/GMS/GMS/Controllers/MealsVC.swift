@@ -54,7 +54,7 @@ class MealsVC: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationHeaderView.configure(heading: "Gaining", avatarImage: "sandeep")
+        navigationHeaderView.configure(heading: "Gaining", avatarImage: nil)
         self.mealsTableView.delegate = self
         self.mealsTableView.dataSource = self
         

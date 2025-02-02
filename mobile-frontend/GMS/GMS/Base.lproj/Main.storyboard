@@ -63,7 +63,7 @@
                             </view>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="r3s-Mj-Pgt" secondAttribute="trailing" id="5qg-pz-4hK"/>
                             <constraint firstItem="r3s-Mj-Pgt" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="JZ2-hF-RxH"/>
@@ -147,7 +147,7 @@
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h04-rW-iso"/>
-                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.96470588235294119" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="h04-rW-iso" firstAttribute="trailing" secondItem="QD1-Rq-6d3" secondAttribute="trailing" constant="10" id="1sg-Uk-WVE"/>
                             <constraint firstAttribute="trailing" secondItem="TwA-jL-QuU" secondAttribute="trailing" constant="20" id="3hg-0o-QwF"/>
@@ -274,11 +274,12 @@
                             </view>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" estimatedSectionHeaderHeight="-1" sectionFooterHeight="28" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="XJc-ND-G5o">
                                 <rect key="frame" x="10" y="134" width="373" height="684"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <color key="separatorColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="KAv-qx-ADI"/>
-                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="KAv-qx-ADI" firstAttribute="bottom" secondItem="XJc-ND-G5o" secondAttribute="bottom" id="1fe-d7-QfC"/>
                             <constraint firstItem="XJc-ND-G5o" firstAttribute="top" secondItem="2aO-sr-vyY" secondAttribute="bottom" constant="25" id="6Kx-m8-nj4"/>
@@ -321,38 +322,163 @@
         <!--Workouts-->
         <scene sceneID="zrr-m4-boX">
             <objects>
-                <viewController id="nyf-3D-Eqz" sceneMemberID="viewController">
+                <viewController id="nyf-3D-Eqz" customClass="WorkoutsVC" customModule="GMS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="bIZ-LE-UQE">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rGO-Cy-5kT" customClass="NavigationHeaderView" customModule="GMS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="103" width="393" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="kyb-S7-11r"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6Xx-LV-uFA">
+                                <rect key="frame" x="0.0" y="178" width="393" height="591"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="q98-Fn-Ebf"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="q98-Fn-Ebf" firstAttribute="trailing" secondItem="6Xx-LV-uFA" secondAttribute="trailing" id="2gH-V5-jso"/>
+                            <constraint firstItem="rGO-Cy-5kT" firstAttribute="leading" secondItem="q98-Fn-Ebf" secondAttribute="leading" id="QMc-sW-jUz"/>
+                            <constraint firstItem="q98-Fn-Ebf" firstAttribute="trailing" secondItem="rGO-Cy-5kT" secondAttribute="trailing" id="TCZ-hE-wgm"/>
+                            <constraint firstItem="rGO-Cy-5kT" firstAttribute="top" secondItem="q98-Fn-Ebf" secondAttribute="top" id="f3a-q2-Iw7"/>
+                            <constraint firstItem="6Xx-LV-uFA" firstAttribute="top" secondItem="rGO-Cy-5kT" secondAttribute="bottom" constant="25" id="vO1-Ur-NNy"/>
+                            <constraint firstItem="6Xx-LV-uFA" firstAttribute="leading" secondItem="q98-Fn-Ebf" secondAttribute="leading" id="wD8-u2-RNQ"/>
+                            <constraint firstItem="q98-Fn-Ebf" firstAttribute="bottom" secondItem="6Xx-LV-uFA" secondAttribute="bottom" id="wMM-sW-uKP"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Workouts" id="dBf-f0-1dq">
                         <imageReference key="image" image="dumbbell" catalog="system" symbolScale="medium"/>
                         <imageReference key="selectedImage" image="dumbbell.fill" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" title="Workouts" id="W3X-NI-vpH"/>
+                    <navigationItem key="navigationItem" id="W3X-NI-vpH"/>
+                    <connections>
+                        <outlet property="navigationHeaderView" destination="rGO-Cy-5kT" id="per-on-jOR"/>
+                        <outlet property="workoutsTableView" destination="6Xx-LV-uFA" id="ZkN-wp-ivR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A1L-oq-SLV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="6720" y="827"/>
         </scene>
-        <!--Explore members-->
+        <!--WorkoutVC-->
+        <scene sceneID="ys1-XJ-4yt">
+            <objects>
+                <viewController storyboardIdentifier="WorkoutVC" id="g9O-qY-u7q" customClass="WorkoutVC" customModule="GMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Kj-nu-Gmy">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8y-gp-vka" customClass="NavigationHeaderView" customModule="GMS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="dn2-H1-xHu"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="4wS-CT-Sho">
+                                <rect key="frame" x="10" y="134" width="373" height="684"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="vPi-OB-0BR"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="d8y-gp-vka" firstAttribute="top" secondItem="vPi-OB-0BR" secondAttribute="top" id="58x-pc-sSx"/>
+                            <constraint firstItem="vPi-OB-0BR" firstAttribute="bottom" secondItem="4wS-CT-Sho" secondAttribute="bottom" id="Mf2-hh-dRv"/>
+                            <constraint firstItem="d8y-gp-vka" firstAttribute="leading" secondItem="vPi-OB-0BR" secondAttribute="leading" id="QpZ-UH-J4y"/>
+                            <constraint firstItem="4wS-CT-Sho" firstAttribute="leading" secondItem="vPi-OB-0BR" secondAttribute="leading" constant="10" id="dAs-fJ-lFL"/>
+                            <constraint firstItem="vPi-OB-0BR" firstAttribute="trailing" secondItem="4wS-CT-Sho" secondAttribute="trailing" constant="10" id="hcI-s4-qQF"/>
+                            <constraint firstItem="vPi-OB-0BR" firstAttribute="trailing" secondItem="d8y-gp-vka" secondAttribute="trailing" id="lep-yK-BAD"/>
+                            <constraint firstItem="4wS-CT-Sho" firstAttribute="top" secondItem="d8y-gp-vka" secondAttribute="bottom" constant="25" id="znr-Y3-VKD"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="exerciseTableView" destination="4wS-CT-Sho" id="7TP-z8-OuQ"/>
+                        <outlet property="navigationHeaderView" destination="d8y-gp-vka" id="awQ-uH-gfY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xi4-xC-03L" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6720" y="1529"/>
+        </scene>
+        <!--Explore ProfileVC-->
+        <scene sceneID="0uA-JZ-uqy">
+            <objects>
+                <viewController storyboardIdentifier="ExploreProfileVC" id="shY-wo-cWu" customClass="ExploreProfileVC" customModule="GMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="B4O-3X-sl4">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rov-Eb-fg2" customClass="NavigationHeaderView" customModule="GMS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Cb0-JT-BtL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="Qfm-Lg-5Ke"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="rov-Eb-fg2" firstAttribute="top" secondItem="Qfm-Lg-5Ke" secondAttribute="top" id="LpT-91-GhH"/>
+                            <constraint firstItem="Qfm-Lg-5Ke" firstAttribute="trailing" secondItem="rov-Eb-fg2" secondAttribute="trailing" id="P1e-T4-vhZ"/>
+                            <constraint firstItem="rov-Eb-fg2" firstAttribute="leading" secondItem="Qfm-Lg-5Ke" secondAttribute="leading" id="pWN-fK-NO1"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navigationHeaderView" destination="rov-Eb-fg2" id="pBU-lw-rDn"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="e7u-1y-dv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7775" y="1529"/>
+        </scene>
+        <!--Explore-->
         <scene sceneID="q7s-Tc-56U">
             <objects>
-                <viewController id="oUu-NQ-C5H" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="ExploreMembersVC" id="oUu-NQ-C5H" customClass="ExploreMembersVC" customModule="GMS" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="pNL-Pd-nVp">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oaz-VO-tGv" customClass="NavigationHeaderView" customModule="GMS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="103" width="393" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BqL-QG-WbP"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="b3z-FW-1sc">
+                                <rect key="frame" x="0.0" y="178" width="393" height="591"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jl0-eg-OiY"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="jl0-eg-OiY" firstAttribute="trailing" secondItem="Oaz-VO-tGv" secondAttribute="trailing" id="7ka-v8-Ow0"/>
+                            <constraint firstItem="jl0-eg-OiY" firstAttribute="bottom" secondItem="b3z-FW-1sc" secondAttribute="bottom" id="VKI-Gf-yRn"/>
+                            <constraint firstItem="Oaz-VO-tGv" firstAttribute="top" secondItem="jl0-eg-OiY" secondAttribute="top" id="bmz-gC-kHH"/>
+                            <constraint firstItem="jl0-eg-OiY" firstAttribute="trailing" secondItem="b3z-FW-1sc" secondAttribute="trailing" id="f7h-cl-5h6"/>
+                            <constraint firstItem="b3z-FW-1sc" firstAttribute="top" secondItem="Oaz-VO-tGv" secondAttribute="bottom" constant="25" id="g7F-Wv-IIm"/>
+                            <constraint firstItem="b3z-FW-1sc" firstAttribute="leading" secondItem="jl0-eg-OiY" secondAttribute="leading" id="hgX-0d-Phv"/>
+                            <constraint firstItem="Oaz-VO-tGv" firstAttribute="leading" secondItem="jl0-eg-OiY" secondAttribute="leading" id="zqR-Dt-0ae"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Explore" id="Yce-2P-Ods">
                         <imageReference key="image" image="person.line.dotted.person" catalog="system" symbolScale="medium"/>
                         <imageReference key="selectedImage" image="person.line.dotted.person.fill" catalog="system" symbolScale="medium"/>
                     </tabBarItem>
-                    <navigationItem key="navigationItem" title="Explore members" largeTitleDisplayMode="always" id="x58-15-rOY"/>
+                    <navigationItem key="navigationItem" largeTitleDisplayMode="always" id="x58-15-rOY"/>
+                    <connections>
+                        <outlet property="membersTableView" destination="b3z-FW-1sc" id="C7m-Wn-rUP"/>
+                        <outlet property="navigationHeaderView" destination="Oaz-VO-tGv" id="lVa-tj-o9s"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3FY-zT-n0p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
