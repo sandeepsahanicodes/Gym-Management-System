@@ -421,22 +421,42 @@
                                     <constraint firstAttribute="height" constant="50" id="Cb0-JT-BtL"/>
                                 </constraints>
                             </view>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="w1s-rl-Z92">
+                                <rect key="frame" x="0.0" y="134" width="393" height="684"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FFM-VT-1Dy">
+                                    <size key="itemSize" width="128" height="128"/>
+                                    <size key="headerReferenceSize" width="50" height="50"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                                <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" reuseIdentifier="PostsCollectionHeaderView" id="HVq-am-M9o" customClass="PostsCollectionHeaderView" customModule="GMS" customModuleProvider="target">
+                                    <rect key="frame" x="0.0" y="0.0" width="393" height="50"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </collectionReusableView>
+                            </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qfm-Lg-5Ke"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="w1s-rl-Z92" firstAttribute="leading" secondItem="Qfm-Lg-5Ke" secondAttribute="leading" id="6Fm-Jk-jgc"/>
                             <constraint firstItem="rov-Eb-fg2" firstAttribute="top" secondItem="Qfm-Lg-5Ke" secondAttribute="top" id="LpT-91-GhH"/>
                             <constraint firstItem="Qfm-Lg-5Ke" firstAttribute="trailing" secondItem="rov-Eb-fg2" secondAttribute="trailing" id="P1e-T4-vhZ"/>
+                            <constraint firstItem="Qfm-Lg-5Ke" firstAttribute="trailing" secondItem="w1s-rl-Z92" secondAttribute="trailing" id="fxa-oJ-ELy"/>
                             <constraint firstItem="rov-Eb-fg2" firstAttribute="leading" secondItem="Qfm-Lg-5Ke" secondAttribute="leading" id="pWN-fK-NO1"/>
+                            <constraint firstItem="w1s-rl-Z92" firstAttribute="top" secondItem="rov-Eb-fg2" secondAttribute="bottom" constant="25" id="qfL-Yr-0Sc"/>
+                            <constraint firstItem="Qfm-Lg-5Ke" firstAttribute="bottom" secondItem="w1s-rl-Z92" secondAttribute="bottom" id="z5K-Lg-qqi"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="navigationHeaderView" destination="rov-Eb-fg2" id="pBU-lw-rDn"/>
+                        <outlet property="postsCollectionView" destination="w1s-rl-Z92" id="TA8-n3-Cza"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7u-1y-dv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7775" y="1529"/>
+            <point key="canvasLocation" x="7774.8091603053435" y="1528.8732394366198"/>
         </scene>
         <!--Explore-->
         <scene sceneID="q7s-Tc-56U">
