@@ -5,28 +5,38 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PostsCollectionViewCell" id="gTV-IL-0wX" customClass="PostsCollectionViewCell" customModule="GMS" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="175" height="166"/>
+            <rect key="frame" x="0.0" y="0.0" width="410" height="375"/>
             <autoresizingMask key="autoresizingMask"/>
             <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
-                <rect key="frame" x="0.0" y="0.0" width="175" height="166"/>
+                <rect key="frame" x="0.0" y="0.0" width="410" height="375"/>
                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sandeep" translatesAutoresizingMaskIntoConstraints="NO" id="Hzw-SU-Rs6">
+                        <rect key="frame" x="0.0" y="0.0" width="410" height="375"/>
+                    </imageView>
+                </subviews>
             </view>
             <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
-            <color key="backgroundColor" systemColor="systemBlueColor"/>
-            <size key="customSize" width="175" height="166"/>
-            <point key="canvasLocation" x="234.35114503816794" y="60.563380281690144"/>
+            <constraints>
+                <constraint firstItem="Hzw-SU-Rs6" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="33E-85-yeK"/>
+                <constraint firstAttribute="trailing" secondItem="Hzw-SU-Rs6" secondAttribute="trailing" id="5Q7-gM-Cge"/>
+                <constraint firstAttribute="bottom" secondItem="Hzw-SU-Rs6" secondAttribute="bottom" id="8oT-xz-6CY"/>
+                <constraint firstItem="Hzw-SU-Rs6" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="AYL-VE-v5j"/>
+            </constraints>
+            <size key="customSize" width="410" height="375"/>
+            <connections>
+                <outlet property="gridImage" destination="Hzw-SU-Rs6" id="m1M-iU-M8T"/>
+            </connections>
+            <point key="canvasLocation" x="413.74045801526717" y="134.1549295774648"/>
         </collectionViewCell>
     </objects>
     <resources>
-        <systemColor name="systemBlueColor">
-            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </systemColor>
+        <image name="sandeep" width="1500" height="2000"/>
     </resources>
 </document>

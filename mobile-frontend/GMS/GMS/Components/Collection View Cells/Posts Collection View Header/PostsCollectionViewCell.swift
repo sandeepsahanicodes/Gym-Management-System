@@ -9,9 +9,12 @@ import UIKit
 
 class PostsCollectionViewCell: UICollectionViewCell {
 
+    @IBOutlet weak var gridImage: UIImageView!
     override func awakeFromNib() {
         super.awakeFromNib()
-        // Initialization code
     }
 
+    public func configure(gridImage: String) {
+        self.gridImage.image = UIImage(named: gridImage)
+    }
 }
