@@ -458,6 +458,47 @@
             </objects>
             <point key="canvasLocation" x="7774.8091603053435" y="1528.8732394366198"/>
         </scene>
+        <!--FeedVC-->
+        <scene sceneID="eyW-4p-sY1">
+            <objects>
+                <viewController storyboardIdentifier="FeedVC" id="DqC-FH-Xo5" customClass="FeedVC" customModule="GMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="lpC-Zp-17u">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uDU-12-XPc" customClass="NavigationHeaderView" customModule="GMS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="y56-10-Her"/>
+                                </constraints>
+                            </view>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Jog-Nx-UNQ">
+                                <rect key="frame" x="0.0" y="134" width="393" height="684"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="AWN-vJ-L6H"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="AWN-vJ-L6H" firstAttribute="bottom" secondItem="Jog-Nx-UNQ" secondAttribute="bottom" id="97h-OW-YHz"/>
+                            <constraint firstItem="uDU-12-XPc" firstAttribute="leading" secondItem="AWN-vJ-L6H" secondAttribute="leading" id="9Bb-Ya-yJd"/>
+                            <constraint firstItem="Jog-Nx-UNQ" firstAttribute="leading" secondItem="AWN-vJ-L6H" secondAttribute="leading" id="LeB-17-QRA"/>
+                            <constraint firstItem="AWN-vJ-L6H" firstAttribute="trailing" secondItem="Jog-Nx-UNQ" secondAttribute="trailing" id="adY-8O-KSZ"/>
+                            <constraint firstItem="uDU-12-XPc" firstAttribute="top" secondItem="AWN-vJ-L6H" secondAttribute="top" id="cCF-vI-UBD"/>
+                            <constraint firstItem="AWN-vJ-L6H" firstAttribute="trailing" secondItem="uDU-12-XPc" secondAttribute="trailing" id="qSs-IF-9H4"/>
+                            <constraint firstItem="Jog-Nx-UNQ" firstAttribute="top" secondItem="uDU-12-XPc" secondAttribute="bottom" constant="25" id="zXx-mb-jEf"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="feedTableView" destination="Jog-Nx-UNQ" id="Skg-76-gCm"/>
+                        <outlet property="navigationHeaderView" destination="uDU-12-XPc" id="mcZ-Cd-2cd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pQB-NR-frE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="7775" y="2220"/>
+        </scene>
         <!--Explore-->
         <scene sceneID="q7s-Tc-56U">
             <objects>

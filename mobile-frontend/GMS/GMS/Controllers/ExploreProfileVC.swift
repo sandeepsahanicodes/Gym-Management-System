@@ -35,6 +35,8 @@ extension ExploreProfileVC: UICollectionViewDelegate, UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
+        guard let feedVC = storyboard?.instantiateViewController(withIdentifier: String(describing: FeedVC.self)) as? FeedVC else { return }
+        self.navigationController?.pushViewController(feedVC, animated: true)
         print("You clicked the \(indexPath.row + 1)")
     }
     
