@@ -13,10 +13,9 @@ struct Member {
     let joiningDate: String
 }
 
-class ExploreMembersVC: UIViewController {
+class ExploreMembersVC: UIViewController, ProfileAvatarButtonDelegate {
 
     @IBOutlet weak var navigationHeaderView: NavigationHeaderView!
-    
     @IBOutlet weak var membersTableView: UITableView!
     
     let members: [Member] = [
@@ -35,10 +34,15 @@ class ExploreMembersVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationHeaderView.configure(heading: "Explore Members", avatarImage: "sandeep")
+        navigationHeaderView.delegate = self
+        
         self.membersTableView.delegate = self
         self.membersTableView.dataSource = self
-        
         self.membersTableView.register(UINib(nibName: String(describing: PersonTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: PersonTableViewCell.self))
+    }
+    
+    func didProfileAvatarTapped() {
+        ViewControllerFactory.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
 }
 

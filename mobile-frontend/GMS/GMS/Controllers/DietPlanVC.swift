@@ -7,15 +7,15 @@
 
 import UIKit
 
-class DietPlanVC: UIViewController {
-
-    @IBOutlet weak var navigationHeaderView: NavigationHeaderView!
+class DietPlanVC: UIViewController, ProfileAvatarButtonDelegate {
     
+    @IBOutlet weak var navigationHeaderView: NavigationHeaderView!
     @IBOutlet weak var dietCardTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationHeaderView.configure(heading: "Diet Plan", avatarImage: "sandeep")
+        navigationHeaderView.delegate = self
         
         dietCardTableView.dataSource = self
         dietCardTableView.delegate = self
@@ -24,12 +24,13 @@ class DietPlanVC: UIViewController {
         self.dietCardTableView.showsVerticalScrollIndicator = false
         self.dietCardTableView.showsHorizontalScrollIndicator = false
     }
+    
+    func didProfileAvatarTapped() {
+        ViewControllerFactory.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
+    }
 }
 
-extension DietPlanVC:
-    
-    
-    UITableViewDelegate,UITableViewDataSource,CardTableViewCellDelegate {
+extension DietPlanVC: UITableViewDelegate,UITableViewDataSource,CardTableViewCellDelegate {
    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 220

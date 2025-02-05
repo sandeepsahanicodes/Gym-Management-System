@@ -12,7 +12,7 @@ struct Workouts {
     let description: String
 }
 
-class WorkoutsVC: UIViewController {
+class WorkoutsVC: UIViewController, ProfileAvatarButtonDelegate {
     
     @IBOutlet weak var navigationHeaderView: NavigationHeaderView!
     @IBOutlet weak var workoutsTableView: UITableView!
@@ -62,10 +62,16 @@ class WorkoutsVC: UIViewController {
         super.viewDidLoad()
         
         navigationHeaderView.configure(heading: "Workouts",avatarImage: "sandeep")
+        navigationHeaderView.delegate = self
+        
         self.workoutsTableView.delegate = self
         self.workoutsTableView.dataSource = self
         
         self.workoutsTableView.register(UINib(nibName: String(describing: CardTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: CardTableViewCell.self))
+    }
+    
+    func didProfileAvatarTapped() {
+        ViewControllerFactory.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
 }
 

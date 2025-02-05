@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ExploreProfileVC: UIViewController {
+class ExploreProfileVC: UIViewController, ProfileAvatarButtonDelegate {
 
     @IBOutlet weak var navigationHeaderView: NavigationHeaderView!
     
@@ -19,15 +19,18 @@ class ExploreProfileVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationHeaderView.configure(heading: "Explore Members",avatarImage: "sandeep")
+        navigationHeaderView.delegate = self
         
         self.postsCollectionView.delegate = self
         self.postsCollectionView.dataSource = self
         
         self.postsCollectionView.register(UINib(nibName: String(describing: PostsCollectionHeaderView.self), bundle: nil), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: String(describing: PostsCollectionHeaderView.self))
-        
         self.postsCollectionView.register(UINib(nibName: String(describing: PostsCollectionViewCell.self), bundle: nil), forCellWithReuseIdentifier: String(describing: PostsCollectionViewCell.self))
     }
     
+    func didProfileAvatarTapped() {
+        ViewControllerFactory.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
+    }
 }
 
 extension ExploreProfileVC: UICollectionViewDelegate, UICollectionViewDataSource {

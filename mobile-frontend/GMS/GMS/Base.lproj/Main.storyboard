@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -19,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vXo-3T-vzc">
-                                <rect key="frame" x="20" y="143.99999999999997" width="353" height="319.33333333333326"/>
+                                <rect key="frame" x="20" y="143.99999999999997" width="353" height="313.33333333333326"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKu-no-Tjh" customClass="InputField" customModule="GMS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
@@ -46,9 +45,11 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNm-9j-bd8">
-                                        <rect key="frame" x="0.0" y="285" width="353" height="34.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="285" width="353" height="28.333333333333314"/>
                                         <state key="normal" title="Button"/>
-                                        <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Sign In">
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
+                                        </buttonConfiguration>
                                         <connections>
                                             <segue destination="LYd-tl-grt" kind="show" id="sgr-ss-Rpy"/>
                                         </connections>
@@ -137,26 +138,15 @@
                                     <constraint firstAttribute="height" constant="260" id="UFR-aU-7ic"/>
                                 </constraints>
                             </stackView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QD1-Rq-6d3">
-                                <rect key="frame" x="10" y="724.66666666666663" width="373" height="34.333333333333371"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Button"/>
-                                <connections>
-                                    <segue destination="fOK-Wn-MqB" kind="show" id="2m5-HX-DBK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="h04-rW-iso"/>
                         <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
-                            <constraint firstItem="h04-rW-iso" firstAttribute="trailing" secondItem="QD1-Rq-6d3" secondAttribute="trailing" constant="10" id="1sg-Uk-WVE"/>
                             <constraint firstAttribute="trailing" secondItem="TwA-jL-QuU" secondAttribute="trailing" constant="20" id="3hg-0o-QwF"/>
                             <constraint firstItem="TwA-jL-QuU" firstAttribute="leading" secondItem="qcE-I9-zAc" secondAttribute="leading" constant="20" id="PaP-Bm-RGW"/>
                             <constraint firstItem="h04-rW-iso" firstAttribute="trailing" secondItem="NRo-kK-Xix" secondAttribute="trailing" id="Xf4-RU-EyR"/>
-                            <constraint firstItem="QD1-Rq-6d3" firstAttribute="leading" secondItem="h04-rW-iso" secondAttribute="leading" constant="10" id="YoW-cF-Xee"/>
                             <constraint firstItem="NRo-kK-Xix" firstAttribute="leading" secondItem="h04-rW-iso" secondAttribute="leading" id="b4h-qe-jFA"/>
                             <constraint firstItem="TwA-jL-QuU" firstAttribute="top" secondItem="NRo-kK-Xix" secondAttribute="bottom" constant="45" id="cXZ-hX-OEF"/>
-                            <constraint firstItem="h04-rW-iso" firstAttribute="bottom" secondItem="QD1-Rq-6d3" secondAttribute="bottom" constant="10" id="pFO-UF-ypC"/>
                             <constraint firstItem="NRo-kK-Xix" firstAttribute="top" secondItem="h04-rW-iso" secondAttribute="top" id="vbU-yj-sbi"/>
                         </constraints>
                     </view>
@@ -241,22 +231,6 @@
             </objects>
             <point key="canvasLocation" x="4759.5419847328239" y="826.76056338028172"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="kwC-zz-y42">
-            <objects>
-                <viewController id="fOK-Wn-MqB" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="WUU-fK-9fX">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <viewLayoutGuide key="safeArea" id="OCP-01-6mn"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="u8D-fE-4z2"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Uvp-xC-soh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3618" y="1529"/>
-        </scene>
         <!--ProfileVC-->
         <scene sceneID="a5Q-Jw-xfX">
             <objects>
@@ -283,21 +257,21 @@
                                         </constraints>
                                     </view>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dln-8Z-AZy">
-                                        <rect key="frame" x="0.0" y="600" width="373" height="74"/>
+                                        <rect key="frame" x="0.0" y="607.33333333333337" width="373" height="66.666666666666629"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VE-RE-qVv">
-                                                <rect key="frame" x="0.0" y="0.0" width="373" height="32"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="28.333333333333332"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Edit Profile">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0S-A9-5gj">
-                                                <rect key="frame" x="0.0" y="42" width="373" height="32"/>
+                                                <rect key="frame" x="0.0" y="38.333333333333258" width="373" height="28.333333333333329"/>
                                                 <color key="tintColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Log out">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
                                                 </buttonConfiguration>
                                             </button>
                                         </subviews>
@@ -750,8 +724,5 @@
         <image name="person.line.dotted.person.fill" catalog="system" width="128" height="59"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
     </resources>
 </document>

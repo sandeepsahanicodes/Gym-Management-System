@@ -13,7 +13,7 @@ struct Meal {
     let macros: String
 }
 
-class MealsVC: UIViewController {
+class MealsVC: UIViewController, ProfileAvatarButtonDelegate {
 
     @IBOutlet weak var navigationHeaderView: NavigationHeaderView!
     
@@ -55,10 +55,16 @@ class MealsVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationHeaderView.configure(heading: "Gaining", avatarImage: nil)
+        navigationHeaderView.delegate = self
+        
         self.mealsTableView.delegate = self
         self.mealsTableView.dataSource = self
         
         self.mealsTableView.register(UINib(nibName: String(describing: InfoTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: InfoTableViewCell.self))
+    }
+    
+    func didProfileAvatarTapped() {
+        ViewControllerFactory.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
 }
 

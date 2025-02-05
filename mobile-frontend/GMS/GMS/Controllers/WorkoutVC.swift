@@ -12,9 +12,9 @@ struct Exercise {
     let description: String
 }
 
-class WorkoutVC: UIViewController {
-    @IBOutlet weak var navigationHeaderView: NavigationHeaderView!
+class WorkoutVC: UIViewController, ProfileAvatarButtonDelegate {
     
+    @IBOutlet weak var navigationHeaderView: NavigationHeaderView!
     @IBOutlet weak var exerciseTableView: UITableView!
     
     let chestExercises: [Exercise] = [
@@ -52,16 +52,18 @@ class WorkoutVC: UIViewController {
         )
     ]
 
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationHeaderView.configure(heading: "Chest", avatarImage: "sandeep")
+        navigationHeaderView.delegate = self
         
         self.exerciseTableView.delegate = self
         self.exerciseTableView.dataSource = self
-        
         self.exerciseTableView.register(UINib(nibName: String(describing: InfoTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: InfoTableViewCell.self))
-        
+    }
+    
+    func didProfileAvatarTapped() {
+        ViewControllerFactory.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
 }
 

@@ -14,7 +14,7 @@ struct FeedData {
     let postImage: String
     let postCaption: String
 }
-class FeedVC: UIViewController {
+class FeedVC: UIViewController, ProfileAvatarButtonDelegate {
 
     @IBOutlet weak var navigationHeaderView: NavigationHeaderView!
     @IBOutlet weak var feedTableView: UITableView!
@@ -39,11 +39,16 @@ class FeedVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationHeaderView.configure(heading: "Explore Members", avatarImage: "sandeep")
+        navigationHeaderView.delegate = self
+        
         self.feedTableView.delegate = self
         self.feedTableView.dataSource = self
         
         self.feedTableView.register(UINib(nibName: String(describing: FeedTableViewCell.self), bundle: nil), forCellReuseIdentifier: String(describing: FeedTableViewCell.self))
-
+    }
+    
+    func didProfileAvatarTapped() {
+        ViewControllerFactory.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
 }
 
