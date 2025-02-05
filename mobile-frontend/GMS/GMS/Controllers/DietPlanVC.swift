@@ -52,10 +52,6 @@ extension DietPlanVC:
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let mealsVC = storyboard?.instantiateViewController(identifier: String(describing: MealsVC.self)) else {
-            print("View controller with storyboard id doesn't exists!")
-            return
-        }
-        navigationController?.pushViewController(mealsVC, animated: true)
+        ViewControllerFactory.push(ofType: MealsVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
 }

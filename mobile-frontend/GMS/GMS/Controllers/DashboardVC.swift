@@ -7,9 +7,8 @@
 
 import UIKit
 
-class DashboardVC: UIViewController {
-
-
+class DashboardVC: UIViewController, ProfileAvatarButtonDelegate {
+    
     @IBOutlet weak var navigationHeader: NavigationHeaderView!
     @IBOutlet weak var peoplesCard: DashboardCard!
     @IBOutlet weak var membershipCard: DashboardCard!
@@ -20,6 +19,8 @@ class DashboardVC: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationHeader.configure(heading: "Dashboard", avatarImage: "av2.jpeg")
+        navigationHeader.delegate = self
+        
         peoplesCard.configure(icon: "person.3.fill", iconBgColor: .peoplesBlue, value: "50", cardDescription: "Peoples")
         membershipCard.configure(icon: "cart.fill", iconBgColor: .cartRed, value: "Silver", cardDescription: "Membership")
         dueCard.configure(icon: "calendar.badge.clock", iconBgColor: .black, value: "90 days left", cardDescription: "Due")
@@ -27,6 +28,10 @@ class DashboardVC: UIViewController {
         
         self.tabBarController?.tabBar.tintColor = .black
         self.tabBarController?.tabBar.unselectedItemTintColor = .black
+    }
+    
+    func didProfileAvatarTapped() {
+        ViewControllerFactory.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
     
 }

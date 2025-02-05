@@ -257,6 +257,75 @@
             </objects>
             <point key="canvasLocation" x="3618" y="1529"/>
         </scene>
+        <!--ProfileVC-->
+        <scene sceneID="a5Q-Jw-xfX">
+            <objects>
+                <viewController storyboardIdentifier="ProfileVC" id="Td3-6g-Hza" customClass="ProfileVC" customModule="GMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mrE-hB-ihp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FWv-7v-PUG" customClass="NavigationHeaderView" customModule="GMS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="BhW-kS-bmF"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="TAl-ss-Zbk">
+                                <rect key="frame" x="10" y="134" width="373" height="674"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pFy-53-G59" customClass="ProfileDetailsView" customModule="GMS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="400"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="400" id="9Ap-Ek-qaG"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dln-8Z-AZy">
+                                        <rect key="frame" x="0.0" y="600" width="373" height="74"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VE-RE-qVv">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="32"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Edit Profile">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0S-A9-5gj">
+                                                <rect key="frame" x="0.0" y="42" width="373" height="32"/>
+                                                <color key="tintColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Log out">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                                </buttonConfiguration>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="rII-kl-Q40"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="FWv-7v-PUG" firstAttribute="leading" secondItem="rII-kl-Q40" secondAttribute="leading" id="JZW-d6-jjO"/>
+                            <constraint firstItem="rII-kl-Q40" firstAttribute="trailing" secondItem="TAl-ss-Zbk" secondAttribute="trailing" constant="10" id="e86-7X-wli"/>
+                            <constraint firstItem="FWv-7v-PUG" firstAttribute="top" secondItem="rII-kl-Q40" secondAttribute="top" id="f0T-Qe-ROq"/>
+                            <constraint firstItem="TAl-ss-Zbk" firstAttribute="leading" secondItem="rII-kl-Q40" secondAttribute="leading" constant="10" id="iEf-mh-hKs"/>
+                            <constraint firstItem="TAl-ss-Zbk" firstAttribute="top" secondItem="FWv-7v-PUG" secondAttribute="bottom" constant="25" id="kjN-Bs-N7C"/>
+                            <constraint firstItem="rII-kl-Q40" firstAttribute="bottom" secondItem="TAl-ss-Zbk" secondAttribute="bottom" constant="10" id="o4t-Dk-jIy"/>
+                            <constraint firstItem="rII-kl-Q40" firstAttribute="trailing" secondItem="FWv-7v-PUG" secondAttribute="trailing" id="vAi-ru-kj2"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="navigationHeaderView" destination="FWv-7v-PUG" id="CdZ-9z-L1X"/>
+                        <outlet property="profileDetailsView" destination="pFy-53-G59" id="MOX-FE-sl2"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sfu-1z-sDZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3618" y="2324"/>
+        </scene>
         <!--MealsVC-->
         <scene sceneID="Tlu-ng-lmq">
             <objects>

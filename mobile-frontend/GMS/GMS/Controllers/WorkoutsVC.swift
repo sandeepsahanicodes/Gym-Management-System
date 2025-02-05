@@ -56,7 +56,7 @@ class WorkoutsVC: UIViewController {
         Workouts(name: "HIIT Fat Burner", description: "High-intensity interval training for maximum calorie burn."),
         Workouts(name: "Endurance Training", description: "Steady-state cardio combined with bodyweight exercises for endurance.")
     ]
-
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -70,7 +70,7 @@ class WorkoutsVC: UIViewController {
 }
 
 extension WorkoutsVC: UITableViewDelegate, UITableViewDataSource, CardTableViewCellDelegate {
-   
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return workouts.count
     }
@@ -88,11 +88,7 @@ extension WorkoutsVC: UITableViewDelegate, UITableViewDataSource, CardTableViewC
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        guard let workoutsVC = storyboard?.instantiateViewController(identifier: String(describing: WorkoutVC.self)) else {
-            print("View controller with storyboard id doesn't exists!")
-            return
-        }
-        navigationController?.pushViewController(workoutsVC, animated: true)
+        ViewControllerFactory.push(ofType: WorkoutVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
     
     func didTapDeleteButton(cell: CardTableViewCell, didTap button: UIButton) {

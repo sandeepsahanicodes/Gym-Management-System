@@ -7,11 +7,17 @@
 
 import UIKit
 
+protocol ProfileAvatarButtonDelegate: AnyObject {
+    func didProfileAvatarTapped()
+}
+
 class NavigationHeaderView: UIView {
 
     @IBOutlet private var containerView: UIView!
     @IBOutlet private weak var navigationHeading: UILabel!
     @IBOutlet private weak var headerAvatarBtn: UIButton!
+    
+    weak var delegate: ProfileAvatarButtonDelegate?
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -48,4 +54,10 @@ class NavigationHeaderView: UIView {
             self.headerAvatarBtn.isHidden = true
         }
     }
+    
+    @IBAction func didTapAvatarBtn(_ sender: Any) {
+        print("Inside the navigation header view btn")
+        delegate?.didProfileAvatarTapped()
+    }
+    
 }

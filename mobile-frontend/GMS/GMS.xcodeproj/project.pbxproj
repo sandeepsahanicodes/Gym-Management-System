@@ -41,6 +41,7 @@
 		83729F4E2D5135040022E00C /* PostsCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83729F4C2D5135040022E00C /* PostsCollectionViewCell.xib */; };
 		83729F512D5135F00022E00C /* PostsCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83729F4F2D5135F00022E00C /* PostsCollectionHeaderView.swift */; };
 		83729F522D5135F00022E00C /* PostsCollectionHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83729F502D5135F00022E00C /* PostsCollectionHeaderView.xib */; };
+		8376FC932D53E3C800C817C2 /* ViewControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8376FC922D53E3C800C817C2 /* ViewControllerFactory.swift */; };
 		8380F93A2D4B92F900DF61F2 /* testTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380F9392D4B92F900DF61F2 /* testTest.swift */; };
 		8380F93E2D4B9B8F00DF61F2 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8380F93D2D4B9B8F00DF61F2 /* CardTableViewCell.xib */; };
 		8380F93F2D4B9B8F00DF61F2 /* CardTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380F93C2D4B9B8F00DF61F2 /* CardTableViewCell.swift */; };
@@ -51,6 +52,9 @@
 		8380F9512D4B9E7B00DF61F2 /* DietPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380F9502D4B9E7B00DF61F2 /* DietPlanVC.swift */; };
 		83888F0F2D4A356F0023CD61 /* DashboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83888F0E2D4A356F0023CD61 /* DashboardCard.swift */; };
 		83888F112D4A35840023CD61 /* DashboardCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83888F102D4A35840023CD61 /* DashboardCard.xib */; };
+		83B58C2D2D536CAE004A0AEE /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B58C2C2D536CAE004A0AEE /* ProfileVC.swift */; };
+		83B58C2F2D537514004A0AEE /* ProfileDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B58C2E2D537513004A0AEE /* ProfileDetailsView.swift */; };
+		83B58C312D53752E004A0AEE /* ProfileDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B58C302D53752E004A0AEE /* ProfileDetailsView.xib */; };
 		9021A808B9FF4D826E8E25D1 /* Pods_GMSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB7A846DE0D474A578F1EB7 /* Pods_GMSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -112,6 +116,7 @@
 		83729F4C2D5135040022E00C /* PostsCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsCollectionViewCell.xib; sourceTree = "<group>"; };
 		83729F4F2D5135F00022E00C /* PostsCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostsCollectionHeaderView.swift; sourceTree = "<group>"; };
 		83729F502D5135F00022E00C /* PostsCollectionHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PostsCollectionHeaderView.xib; sourceTree = "<group>"; };
+		8376FC922D53E3C800C817C2 /* ViewControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerFactory.swift; sourceTree = "<group>"; };
 		8380F9392D4B92F900DF61F2 /* testTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = testTest.swift; sourceTree = "<group>"; };
 		8380F93C2D4B9B8F00DF61F2 /* CardTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardTableViewCell.swift; sourceTree = "<group>"; };
 		8380F93D2D4B9B8F00DF61F2 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
@@ -123,6 +128,9 @@
 		83888F0E2D4A356F0023CD61 /* DashboardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCard.swift; sourceTree = "<group>"; };
 		83888F102D4A35840023CD61 /* DashboardCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCard.xib; sourceTree = "<group>"; };
 		83AD96DF45D43ADDE195E06B /* Pods-GMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMS.release.xcconfig"; path = "Target Support Files/Pods-GMS/Pods-GMS.release.xcconfig"; sourceTree = "<group>"; };
+		83B58C2C2D536CAE004A0AEE /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
+		83B58C2E2D537513004A0AEE /* ProfileDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsView.swift; sourceTree = "<group>"; };
+		83B58C302D53752E004A0AEE /* ProfileDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileDetailsView.xib; sourceTree = "<group>"; };
 		944468CFD4E3AF3FA11AEE34 /* Pods-GMS-GMSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMS-GMSUITests.debug.xcconfig"; path = "Target Support Files/Pods-GMS-GMSUITests/Pods-GMS-GMSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBB61CBABC85EF90D614B16A /* Pods-GMS-GMSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMS-GMSUITests.release.xcconfig"; path = "Target Support Files/Pods-GMS-GMSUITests/Pods-GMS-GMSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E6679E93D0F7B0E8628E9CF2 /* Pods_GMS_GMSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMS_GMSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -169,6 +177,7 @@
 				8318B53D2D4E35B4001BED42 /* ExploreMembersVC.swift */,
 				8318B53F2D4E472B001BED42 /* ExploreProfileVC.swift */,
 				836F59AE2D528BF30035B843 /* FeedVC.swift */,
+				83B58C2C2D536CAE004A0AEE /* ProfileVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -266,6 +275,8 @@
 				8322340A2D49450F0026BE8F /* Drop Down Text Field */,
 				83888F122D4A358C0023CD61 /* Dashboard Card */,
 				83666B4F2D4A635B00B6F368 /* Navigation Header View */,
+				83B58C2E2D537513004A0AEE /* ProfileDetailsView.swift */,
+				83B58C302D53752E004A0AEE /* ProfileDetailsView.xib */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -273,6 +284,7 @@
 		8335F27E2D48F8FE0055F0BE /* GMS */ = {
 			isa = PBXGroup;
 			children = (
+				8376FC912D53E37C00C817C2 /* Utilities */,
 				8322340D2D494AB40026BE8F /* Extensions */,
 				8335F2742D48F8FE0055F0BE /* Components */,
 				8335F2752D48F8FE0055F0BE /* AppDelegate.swift */,
@@ -330,6 +342,14 @@
 				83729F4F2D5135F00022E00C /* PostsCollectionHeaderView.swift */,
 			);
 			path = PostsCollectionViewHeader;
+			sourceTree = "<group>";
+		};
+		8376FC912D53E37C00C817C2 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8376FC922D53E3C800C817C2 /* ViewControllerFactory.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		8380F93B2D4B979300DF61F2 /* Table View Cells */ = {
@@ -521,6 +541,7 @@
 				8380F9462D4B9C4100DF61F2 /* InfoTableViewCell.xib in Resources */,
 				83729F522D5135F00022E00C /* PostsCollectionHeaderView.xib in Resources */,
 				8335F2832D48F8FE0055F0BE /* LaunchScreen.storyboard in Resources */,
+				83B58C312D53752E004A0AEE /* ProfileDetailsView.xib in Resources */,
 				83666B4A2D4A4A7500B6F368 /* NavigationHeaderView.xib in Resources */,
 				8335F2842D48F8FE0055F0BE /* Main.storyboard in Resources */,
 				8380F9492D4B9C5200DF61F2 /* PersonTableViewCell.xib in Resources */,
@@ -661,6 +682,7 @@
 				8322340F2D494ADF0026BE8F /* Extension+UITextField.swift in Sources */,
 				836F59AC2D5282980035B843 /* FeedTableViewCell.swift in Sources */,
 				8302A06F2D4A7442000E4C92 /* Extension+UIView.swift in Sources */,
+				83B58C2F2D537514004A0AEE /* ProfileDetailsView.swift in Sources */,
 				8335F2852D48F8FE0055F0BE /* DropDownInputField.swift in Sources */,
 				8318B53A2D4E14D2001BED42 /* WorkoutsVC.swift in Sources */,
 				831A44102D4D3CD000A47067 /* InfoType.swift in Sources */,
@@ -669,8 +691,10 @@
 				8380F93F2D4B9B8F00DF61F2 /* CardTableViewCell.swift in Sources */,
 				8335F2872D48F8FE0055F0BE /* AppDelegate.swift in Sources */,
 				8335F2882D48F8FE0055F0BE /* SceneDelegate.swift in Sources */,
+				83B58C2D2D536CAE004A0AEE /* ProfileVC.swift in Sources */,
 				8380F9512D4B9E7B00DF61F2 /* DietPlanVC.swift in Sources */,
 				8380F9452D4B9C4100DF61F2 /* InfoTableViewCell.swift in Sources */,
+				8376FC932D53E3C800C817C2 /* ViewControllerFactory.swift in Sources */,
 				8314A47D2D4D2415004C3571 /* MealsVC.swift in Sources */,
 				8318B5402D4E472B001BED42 /* ExploreProfileVC.swift in Sources */,
 				8318B53E2D4E35B4001BED42 /* ExploreMembersVC.swift in Sources */,

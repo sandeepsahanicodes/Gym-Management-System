@@ -20,7 +20,6 @@ class DropDownInputField: UIView, DropDownTextFieldDelegate {
     override init(frame: CGRect) {
         super.init(frame: frame)
         commitInit()
-       
     }
     
     required init?(coder: NSCoder) {

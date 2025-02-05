@@ -55,10 +55,6 @@ extension ExploreMembersVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        guard let workoutsVC = storyboard?.instantiateViewController(identifier: String(describing: ExploreProfileVC.self)) else {
-            print("View controller with storyboard id doesn't exists!")
-            return
-        }
-        navigationController?.pushViewController(workoutsVC, animated: true)
+        ViewControllerFactory.push(ofType: ExploreProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
 }
