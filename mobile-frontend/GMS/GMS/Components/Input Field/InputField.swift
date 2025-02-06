@@ -37,8 +37,11 @@ public class InputField: UIView {
     ///   - heading: The heading or title for the input field.
     ///   - placeholder: The placeholder text displayed in the input field.
     ///   - contentType: The type of content expected in the input field, used for keyboard optimization and autofill.
-    public func configure(heading: String, placeholder: String, contentType: UITextContentType) {
+    public func configure(heading: String, text: String? = nil, placeholder: String, contentType: UITextContentType) {
         self.inputFieldHeading.text = heading
+        if let text = text {
+            self.inputTextField.text = text
+        }
         self.inputTextField.placeholder = placeholder
         self.inputTextField.textContentType = contentType
         
@@ -47,6 +50,13 @@ public class InputField: UIView {
         } else {
             self.inputTextField.isSecureTextEntry = false
         }
+    }
+    /// Returns input field text when its not empty.
+    public func getText() -> String? {
+        guard let text = inputTextField.text, !text.trimmingCharacters(in: .whitespacesAndNewlines).isEmpty else {
+            return nil
+        }
+        return text.trimmingCharacters(in: .whitespacesAndNewlines)
     }
     
     

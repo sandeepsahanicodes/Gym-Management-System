@@ -6,6 +6,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="23506"/>
         <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -51,7 +52,7 @@
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Sign In">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                            <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="LYd-tl-grt" kind="show" id="sgr-ss-Rpy"/>
@@ -269,8 +270,11 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Edit Profile">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="editProfileBtnTapped:" destination="Td3-6g-Hza" eventType="touchUpInside" id="QZf-n9-OBB"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0S-A9-5gj">
                                                 <rect key="frame" x="0.0" y="40" width="373" height="35"/>
@@ -279,9 +283,12 @@
                                                 </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Log out">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
                                                     <color key="baseBackgroundColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="logOutBtnTapped:" destination="Td3-6g-Hza" eventType="touchUpInside" id="38o-4J-9uf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -307,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sfu-1z-sDZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3618" y="2262"/>
+            <point key="canvasLocation" x="3618" y="2319"/>
         </scene>
         <!--MealsVC-->
         <scene sceneID="Tlu-ng-lmq">
@@ -551,6 +558,121 @@
             </objects>
             <point key="canvasLocation" x="7775" y="2220"/>
         </scene>
+        <!--Edit ProfileVC-->
+        <scene sceneID="ytn-eT-fY3">
+            <objects>
+                <viewController storyboardIdentifier="EditProfileVC" id="qlA-DQ-vim" customClass="EditProfileVC" customModule="GMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="S9k-uw-mLn">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QNv-kx-PqH" customClass="NavigationHeaderView" customModule="GMS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="7rB-Sb-EQh"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="MF5-vU-IGN">
+                                <rect key="frame" x="10" y="134" width="373" height="674"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="J8h-BM-Kpc">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="133.33333333333334"/>
+                                        <subviews>
+                                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="sandeep" translatesAutoresizingMaskIntoConstraints="NO" id="U6H-Eh-2Rp">
+                                                <rect key="frame" x="136.66666666666666" y="0.0" width="100" height="100"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="100" id="N4D-8v-VyT"/>
+                                                    <constraint firstAttribute="height" constant="100" id="sK9-B4-byz"/>
+                                                </constraints>
+                                            </imageView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fdk-wS-0bq">
+                                                <rect key="frame" x="153" y="105" width="67" height="28.333333333333343"/>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Upload">
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="0.0"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="uploadBtnTapped:" destination="qlA-DQ-vim" eventType="touchUpInside" id="hdE-57-oWX"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="eCZ-Ie-SiA">
+                                        <rect key="frame" x="0.0" y="153.33333333333331" width="373" height="520.66666666666674"/>
+                                        <subviews>
+                                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="h14-OQ-X6i">
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="295"/>
+                                                <subviews>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vQf-ZN-avH" customClass="InputTextView" customModule="GMS" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="0.0" width="373" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="87A-5n-9im"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6of-f8-7F7" customClass="InputTextView" customModule="GMS" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="65" width="373" height="100"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="100" id="lYn-EW-d7a"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Jlb-xb-vWy" customClass="InputTextView" customModule="GMS" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="170" width="373" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="Ov9-XV-bNY"/>
+                                                        </constraints>
+                                                    </view>
+                                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jrr-UI-8PA" customClass="InputTextView" customModule="GMS" customModuleProvider="target">
+                                                        <rect key="frame" x="0.0" y="235.00000000000006" width="373" height="60"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="height" constant="60" id="ZBR-nS-5lg"/>
+                                                        </constraints>
+                                                    </view>
+                                                </subviews>
+                                            </stackView>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Nkr-fu-WG8">
+                                                <rect key="frame" x="0.0" y="485.66666666666669" width="373" height="35.000000000000057"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="9Nb-qW-TXh"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Save">
+                                                    <fontDescription key="titleFontDescription" type="system" weight="medium" pointSize="15"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="saveBtnTapped:" destination="qlA-DQ-vim" eventType="touchUpInside" id="68B-H9-Ru4"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="REP-Hv-ask"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QNv-kx-PqH" firstAttribute="leading" secondItem="REP-Hv-ask" secondAttribute="leading" id="G4e-PP-LjR"/>
+                            <constraint firstItem="REP-Hv-ask" firstAttribute="trailing" secondItem="QNv-kx-PqH" secondAttribute="trailing" id="Ia0-nb-0XC"/>
+                            <constraint firstItem="REP-Hv-ask" firstAttribute="bottom" secondItem="MF5-vU-IGN" secondAttribute="bottom" constant="10" id="L6z-5k-iOh"/>
+                            <constraint firstItem="QNv-kx-PqH" firstAttribute="top" secondItem="REP-Hv-ask" secondAttribute="top" id="LBY-Xy-xvd"/>
+                            <constraint firstItem="MF5-vU-IGN" firstAttribute="top" secondItem="QNv-kx-PqH" secondAttribute="bottom" constant="25" id="bDW-qA-1ut"/>
+                            <constraint firstItem="MF5-vU-IGN" firstAttribute="leading" secondItem="REP-Hv-ask" secondAttribute="leading" constant="10" id="hLU-de-8Gz"/>
+                            <constraint firstItem="REP-Hv-ask" firstAttribute="trailing" secondItem="MF5-vU-IGN" secondAttribute="trailing" constant="10" id="kMk-VG-l3v"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addressInputTextView" destination="jrr-UI-8PA" id="xve-QW-msi"/>
+                        <outlet property="bioInputTextView" destination="6of-f8-7F7" id="XJH-A8-4jr"/>
+                        <outlet property="genderInputTextView" destination="Jlb-xb-vWy" id="dMh-NE-ZGI"/>
+                        <outlet property="nameInputTextView" destination="vQf-ZN-avH" id="Bj0-Pc-Sw9"/>
+                        <outlet property="navigationHeaderView" destination="QNv-kx-PqH" id="FFd-yl-YeR"/>
+                        <outlet property="userAvatar" destination="U6H-Eh-2Rp" id="qFs-C0-F9b"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="blv-Uy-sak" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3618" y="3030"/>
+        </scene>
         <!--Explore-->
         <scene sceneID="q7s-Tc-56U">
             <objects>
@@ -733,5 +855,9 @@
         <image name="person.line.dotted.person.fill" catalog="system" width="128" height="59"/>
         <image name="plus.app" catalog="system" width="128" height="114"/>
         <image name="plus.app.fill" catalog="system" width="128" height="114"/>
+        <image name="sandeep" width="1500" height="2000"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
     </resources>
 </document>

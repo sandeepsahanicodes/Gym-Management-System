@@ -18,4 +18,12 @@ class ProfileVC: UIViewController {
         navigationHeaderView.configure(heading: "Profile",isAvatarHidden: true)
         profileDetailsView.configure(details: profileDetail)
     }
+    
+    @IBAction func editProfileBtnTapped(_ sender: Any) {
+        ViewControllerFactory.push(ofType: EditProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
+    }
+    
+    @IBAction func logOutBtnTapped(_ sender: Any) {
+        
+    }
 }

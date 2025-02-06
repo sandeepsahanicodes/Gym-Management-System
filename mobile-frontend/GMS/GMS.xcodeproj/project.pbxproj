@@ -52,6 +52,9 @@
 		8380F9512D4B9E7B00DF61F2 /* DietPlanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8380F9502D4B9E7B00DF61F2 /* DietPlanVC.swift */; };
 		83888F0F2D4A356F0023CD61 /* DashboardCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83888F0E2D4A356F0023CD61 /* DashboardCard.swift */; };
 		83888F112D4A35840023CD61 /* DashboardCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83888F102D4A35840023CD61 /* DashboardCard.xib */; };
+		83A5758D2D54DBDD004F1CC4 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5758C2D54DBDD004F1CC4 /* EditProfileVC.swift */; };
+		83A5758F2D54F1AF004F1CC4 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5758E2D54F1AF004F1CC4 /* InputTextView.swift */; };
+		83A575942D54F386004F1CC4 /* InputTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A575932D54F386004F1CC4 /* InputTextView.xib */; };
 		83B58C2D2D536CAE004A0AEE /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B58C2C2D536CAE004A0AEE /* ProfileVC.swift */; };
 		83B58C2F2D537514004A0AEE /* ProfileDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B58C2E2D537513004A0AEE /* ProfileDetailsView.swift */; };
 		83B58C312D53752E004A0AEE /* ProfileDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B58C302D53752E004A0AEE /* ProfileDetailsView.xib */; };
@@ -127,6 +130,9 @@
 		8380F9502D4B9E7B00DF61F2 /* DietPlanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DietPlanVC.swift; sourceTree = "<group>"; };
 		83888F0E2D4A356F0023CD61 /* DashboardCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardCard.swift; sourceTree = "<group>"; };
 		83888F102D4A35840023CD61 /* DashboardCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DashboardCard.xib; sourceTree = "<group>"; };
+		83A5758C2D54DBDD004F1CC4 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
+		83A5758E2D54F1AF004F1CC4 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		83A575932D54F386004F1CC4 /* InputTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTextView.xib; sourceTree = "<group>"; };
 		83AD96DF45D43ADDE195E06B /* Pods-GMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMS.release.xcconfig"; path = "Target Support Files/Pods-GMS/Pods-GMS.release.xcconfig"; sourceTree = "<group>"; };
 		83B58C2C2D536CAE004A0AEE /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		83B58C2E2D537513004A0AEE /* ProfileDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsView.swift; sourceTree = "<group>"; };
@@ -178,6 +184,7 @@
 				8318B53F2D4E472B001BED42 /* ExploreProfileVC.swift */,
 				836F59AE2D528BF30035B843 /* FeedVC.swift */,
 				83B58C2C2D536CAE004A0AEE /* ProfileVC.swift */,
+				83A5758C2D54DBDD004F1CC4 /* EditProfileVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -276,6 +283,7 @@
 				83888F122D4A358C0023CD61 /* Dashboard Card */,
 				83666B4F2D4A635B00B6F368 /* Navigation Header View */,
 				8376FC942D53FBF100C817C2 /* Profile Details View */,
+				83A575922D54F1EE004F1CC4 /* Input Text View */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -405,6 +413,15 @@
 				83888F102D4A35840023CD61 /* DashboardCard.xib */,
 			);
 			path = "Dashboard Card";
+			sourceTree = "<group>";
+		};
+		83A575922D54F1EE004F1CC4 /* Input Text View */ = {
+			isa = PBXGroup;
+			children = (
+				83A5758E2D54F1AF004F1CC4 /* InputTextView.swift */,
+				83A575932D54F386004F1CC4 /* InputTextView.xib */,
+			);
+			path = "Input Text View";
 			sourceTree = "<group>";
 		};
 		D15D941E0B427CCA4372A927 /* Frameworks */ = {
@@ -542,6 +559,7 @@
 			files = (
 				832234092D4943F30026BE8F /* DropDownTextField.xib in Resources */,
 				83888F112D4A35840023CD61 /* DashboardCard.xib in Resources */,
+				83A575942D54F386004F1CC4 /* InputTextView.xib in Resources */,
 				8335F27F2D48F8FE0055F0BE /* DropDownInputField.xib in Resources */,
 				8335F2802D48F8FE0055F0BE /* InputField.xib in Resources */,
 				8335F2812D48F8FE0055F0BE /* Assets.xcassets in Resources */,
@@ -711,6 +729,8 @@
 				83729F512D5135F00022E00C /* PostsCollectionHeaderView.swift in Sources */,
 				8318B53C2D4E1602001BED42 /* WorkoutVC.swift in Sources */,
 				83729F4D2D5135040022E00C /* PostsCollectionViewCell.swift in Sources */,
+				83A5758D2D54DBDD004F1CC4 /* EditProfileVC.swift in Sources */,
+				83A5758F2D54F1AF004F1CC4 /* InputTextView.swift in Sources */,
 				8315AFDD2D4BB36E006BE458 /* CardType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
