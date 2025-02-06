@@ -29,7 +29,7 @@ class ExploreProfileVC: UIViewController, ProfileAvatarButtonDelegate {
     }
     
     func didProfileAvatarTapped() {
-        ViewControllerFactory.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
+        NavigationManager.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
 }
 
@@ -38,7 +38,7 @@ extension ExploreProfileVC: UICollectionViewDelegate, UICollectionViewDataSource
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         collectionView.deselectItem(at: indexPath, animated: true)
-        ViewControllerFactory.push(ofType: FeedVC.self, fromStoryboard: "Main", using: self.navigationController)
+        NavigationManager.push(ofType: FeedVC.self, fromStoryboard: "Main", using: self.navigationController)
         print("You clicked the \(indexPath.row + 1)")
     }
     

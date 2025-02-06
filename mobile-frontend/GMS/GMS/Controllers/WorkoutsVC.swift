@@ -71,7 +71,7 @@ class WorkoutsVC: UIViewController, ProfileAvatarButtonDelegate {
     }
     
     func didProfileAvatarTapped() {
-        ViewControllerFactory.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
+        NavigationManager.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
 }
 
@@ -94,7 +94,7 @@ extension WorkoutsVC: UITableViewDelegate, UITableViewDataSource, CardTableViewC
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        ViewControllerFactory.push(ofType: WorkoutVC.self, fromStoryboard: "Main", using: self.navigationController)
+        NavigationManager.push(ofType: WorkoutVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
     
     func didTapDeleteButton(cell: CardTableViewCell, didTap button: UIButton) {

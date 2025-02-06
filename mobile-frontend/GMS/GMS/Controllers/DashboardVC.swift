@@ -31,7 +31,7 @@ class DashboardVC: UIViewController, ProfileAvatarButtonDelegate {
     }
     
     func didProfileAvatarTapped() {
-        ViewControllerFactory.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
+        NavigationManager.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
     
 }

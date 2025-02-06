@@ -20,7 +20,7 @@ class ProfileVC: UIViewController {
     }
     
     @IBAction func editProfileBtnTapped(_ sender: Any) {
-        ViewControllerFactory.push(ofType: EditProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
+        NavigationManager.push(ofType: EditProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
     
     @IBAction func logOutBtnTapped(_ sender: Any) {

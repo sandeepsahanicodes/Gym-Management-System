@@ -42,7 +42,7 @@ class ExploreMembersVC: UIViewController, ProfileAvatarButtonDelegate {
     }
     
     func didProfileAvatarTapped() {
-        ViewControllerFactory.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
+        NavigationManager.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
 }
 
@@ -59,6 +59,6 @@ extension ExploreMembersVC: UITableViewDelegate, UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: false)
-        ViewControllerFactory.push(ofType: ExploreProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
+        NavigationManager.push(ofType: ExploreProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
 }

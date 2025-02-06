@@ -26,7 +26,7 @@ class DietPlanVC: UIViewController, ProfileAvatarButtonDelegate {
     }
     
     func didProfileAvatarTapped() {
-        ViewControllerFactory.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
+        NavigationManager.push(ofType: ProfileVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
 }
 
@@ -53,6 +53,6 @@ extension DietPlanVC: UITableViewDelegate,UITableViewDataSource,CardTableViewCel
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        ViewControllerFactory.push(ofType: MealsVC.self, fromStoryboard: "Main", using: self.navigationController)
+        NavigationManager.push(ofType: MealsVC.self, fromStoryboard: "Main", using: self.navigationController)
     }
 }

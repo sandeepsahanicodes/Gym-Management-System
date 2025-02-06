@@ -8,7 +8,7 @@
 import UIKit
 
 /// Manages creation and pushing of of view controllers in navigation controller.
-struct ViewControllerFactory {
+struct NavigationManager {
     /// Creates an instance of view controller of provided type.
     static func instantiate<T: UIViewController>(ofType type: T.Type, fromStoryboard storyboardName: String) -> T {
         let storyboard = UIStoryboard(name: storyboardName, bundle: nil)
