@@ -11,6 +11,8 @@
 		685C7EA39F4AF747542C61A2 /* Pods_GMS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 42F4E5CBDAE68D1982F9DF22 /* Pods_GMS.framework */; };
 		8302A06F2D4A7442000E4C92 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302A06E2D4A7442000E4C92 /* Extension+UIView.swift */; };
 		8302A0712D4A799C000E4C92 /* Extension+UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8302A0702D4A799C000E4C92 /* Extension+UIColor.swift */; };
+		830E41F72D5504620004FEAD /* PostVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E41F62D5504620004FEAD /* PostVC.swift */; };
+		830E41F92D555DD30004FEAD /* PhotoPickerHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830E41F82D555DD30004FEAD /* PhotoPickerHelper.swift */; };
 		8314A47D2D4D2415004C3571 /* MealsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8314A47C2D4D2415004C3571 /* MealsVC.swift */; };
 		8315AFDD2D4BB36E006BE458 /* CardType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8315AFDC2D4BB36E006BE458 /* CardType.swift */; };
 		8318B53A2D4E14D2001BED42 /* WorkoutsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8318B5392D4E14D2001BED42 /* WorkoutsVC.swift */; };
@@ -85,6 +87,8 @@
 		42F4E5CBDAE68D1982F9DF22 /* Pods_GMS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		8302A06E2D4A7442000E4C92 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		8302A0702D4A799C000E4C92 /* Extension+UIColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIColor.swift"; sourceTree = "<group>"; };
+		830E41F62D5504620004FEAD /* PostVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostVC.swift; sourceTree = "<group>"; };
+		830E41F82D555DD30004FEAD /* PhotoPickerHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoPickerHelper.swift; sourceTree = "<group>"; };
 		8314A47C2D4D2415004C3571 /* MealsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealsVC.swift; sourceTree = "<group>"; };
 		8315AFDC2D4BB36E006BE458 /* CardType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardType.swift; sourceTree = "<group>"; };
 		8318B5392D4E14D2001BED42 /* WorkoutsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutsVC.swift; sourceTree = "<group>"; };
@@ -185,6 +189,7 @@
 				836F59AE2D528BF30035B843 /* FeedVC.swift */,
 				83B58C2C2D536CAE004A0AEE /* ProfileVC.swift */,
 				83A5758C2D54DBDD004F1CC4 /* EditProfileVC.swift */,
+				830E41F62D5504620004FEAD /* PostVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -355,6 +360,7 @@
 			isa = PBXGroup;
 			children = (
 				8376FC922D53E3C800C817C2 /* ViewControllerFactory.swift */,
+				830E41F82D555DD30004FEAD /* PhotoPickerHelper.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -718,9 +724,11 @@
 				8335F2872D48F8FE0055F0BE /* AppDelegate.swift in Sources */,
 				8335F2882D48F8FE0055F0BE /* SceneDelegate.swift in Sources */,
 				83B58C2D2D536CAE004A0AEE /* ProfileVC.swift in Sources */,
+				830E41F92D555DD30004FEAD /* PhotoPickerHelper.swift in Sources */,
 				8380F9512D4B9E7B00DF61F2 /* DietPlanVC.swift in Sources */,
 				8380F9452D4B9C4100DF61F2 /* InfoTableViewCell.swift in Sources */,
 				8376FC932D53E3C800C817C2 /* ViewControllerFactory.swift in Sources */,
+				830E41F72D5504620004FEAD /* PostVC.swift in Sources */,
 				8314A47D2D4D2415004C3571 /* MealsVC.swift in Sources */,
 				8318B5402D4E472B001BED42 /* ExploreProfileVC.swift in Sources */,
 				8318B53E2D4E35B4001BED42 /* ExploreMembersVC.swift in Sources */,

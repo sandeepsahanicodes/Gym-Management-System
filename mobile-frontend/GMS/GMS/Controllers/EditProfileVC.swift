@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import PhotosUI
 
 class EditProfileVC: UIViewController {
     
@@ -13,16 +14,19 @@ class EditProfileVC: UIViewController {
     @IBOutlet weak var userAvatar: UIImageView!
     @IBOutlet weak var nameInputTextView: InputTextView!
     @IBOutlet weak var bioInputTextView: InputTextView!
-    @IBOutlet weak var genderInputTextView: InputTextView!
+    @IBOutlet weak var emailInputTextView: InputTextView!
     @IBOutlet weak var addressInputTextView: InputTextView!
+    
+    private let photoPickerHelper = PhotoPickerHelper()
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        navigationHeaderView.configure(heading: "Edit Profile", avatarImage: "sandeep")
+        navigationHeaderView.configure(heading: "Edit Profile", isAvatarHidden: true)
         nameInputTextView.configure(heading: "Name", text: "Sandeep Sahani")
         bioInputTextView.configure(heading: "Bio", text: "Upcoming Software Developer at Swiggy")
-        genderInputTextView.configure(heading: "Gender", text: "Male")
+        emailInputTextView.configure(heading: "Email", text: "sandeepsahani76j@gmail.com")
         addressInputTextView.configure(heading: "Address", text: "Sambalpur, Odisha")
+        photoPickerHelper.delegate = self
         setUpViews()
     }
     
@@ -31,10 +35,16 @@ class EditProfileVC: UIViewController {
     }
     
     @IBAction func uploadBtnTapped(_ sender: Any) {
-        
+        photoPickerHelper.presentPhotoPicker(from: self)
     }
     
     @IBAction func saveBtnTapped(_ sender: Any) {
         print(nameInputTextView.getText() ?? "Enter some value instead of whitespace!")
+    }
+}
+
+extension EditProfileVC: PhotoPickerDelegate {
+    func didSelectImage(_ image: UIImage) {
+        userAvatar.image = image
     }
 }
