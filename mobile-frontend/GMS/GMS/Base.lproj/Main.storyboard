@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="vXo-3T-vzc">
-                                <rect key="frame" x="20" y="143.99999999999997" width="353" height="313.33333333333326"/>
+                                <rect key="frame" x="20" y="144" width="353" height="320"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dKu-no-Tjh" customClass="InputField" customModule="GMS" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="353" height="60"/>
@@ -45,10 +45,13 @@
                                         </constraints>
                                     </view>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CNm-9j-bd8">
-                                        <rect key="frame" x="0.0" y="285" width="353" height="28.333333333333314"/>
+                                        <rect key="frame" x="0.0" y="285" width="353" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="kMc-3R-HLW"/>
+                                        </constraints>
                                         <state key="normal" title="Button"/>
                                         <buttonConfiguration key="configuration" style="filled" title="Sign In">
-                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
+                                            <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                         </buttonConfiguration>
                                         <connections>
                                             <segue destination="LYd-tl-grt" kind="show" id="sgr-ss-Rpy"/>
@@ -256,22 +259,28 @@
                                             <constraint firstAttribute="height" constant="400" id="9Ap-Ek-qaG"/>
                                         </constraints>
                                     </view>
-                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="dln-8Z-AZy">
-                                        <rect key="frame" x="0.0" y="607.33333333333337" width="373" height="66.666666666666629"/>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="dln-8Z-AZy">
+                                        <rect key="frame" x="0.0" y="599" width="373" height="75"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6VE-RE-qVv">
-                                                <rect key="frame" x="0.0" y="0.0" width="373" height="28.333333333333332"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="373" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="9aJ-ia-kyY"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Edit Profile">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
                                                 </buttonConfiguration>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p0S-A9-5gj">
-                                                <rect key="frame" x="0.0" y="38.333333333333258" width="373" height="28.333333333333329"/>
-                                                <color key="tintColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <rect key="frame" x="0.0" y="40" width="373" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="ktc-Fo-mlc"/>
+                                                </constraints>
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Log out">
-                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="12"/>
+                                                    <fontDescription key="titleFontDescription" type="boldSystem" pointSize="15"/>
+                                                    <color key="baseBackgroundColor" red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                 </buttonConfiguration>
                                             </button>
                                         </subviews>
@@ -298,7 +307,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sfu-1z-sDZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3618" y="2324"/>
+            <point key="canvasLocation" x="3618" y="2262"/>
         </scene>
         <!--MealsVC-->
         <scene sceneID="Tlu-ng-lmq">

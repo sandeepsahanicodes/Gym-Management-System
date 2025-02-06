@@ -56,7 +56,6 @@ class NavigationHeaderView: UIView {
     }
     
     @IBAction func didTapAvatarBtn(_ sender: Any) {
-        print("Inside the navigation header view btn")
         delegate?.didProfileAvatarTapped()
     }
     

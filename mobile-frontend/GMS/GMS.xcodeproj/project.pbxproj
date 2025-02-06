@@ -275,8 +275,7 @@
 				8322340A2D49450F0026BE8F /* Drop Down Text Field */,
 				83888F122D4A358C0023CD61 /* Dashboard Card */,
 				83666B4F2D4A635B00B6F368 /* Navigation Header View */,
-				83B58C2E2D537513004A0AEE /* ProfileDetailsView.swift */,
-				83B58C302D53752E004A0AEE /* ProfileDetailsView.xib */,
+				8376FC942D53FBF100C817C2 /* Profile Details View */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -350,6 +349,15 @@
 				8376FC922D53E3C800C817C2 /* ViewControllerFactory.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8376FC942D53FBF100C817C2 /* Profile Details View */ = {
+			isa = PBXGroup;
+			children = (
+				83B58C2E2D537513004A0AEE /* ProfileDetailsView.swift */,
+				83B58C302D53752E004A0AEE /* ProfileDetailsView.xib */,
+			);
+			path = "Profile Details View";
 			sourceTree = "<group>";
 		};
 		8380F93B2D4B979300DF61F2 /* Table View Cells */ = {
