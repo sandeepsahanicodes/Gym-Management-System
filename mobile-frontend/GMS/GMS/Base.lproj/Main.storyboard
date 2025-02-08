@@ -233,7 +233,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kOl-sr-LWD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4759.5419847328239" y="826.76056338028172"/>
+            <point key="canvasLocation" x="4700" y="827"/>
         </scene>
         <!--ProfileVC-->
         <scene sceneID="a5Q-Jw-xfX">
@@ -314,7 +314,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Sfu-1z-sDZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3618" y="2270"/>
+            <point key="canvasLocation" x="3618" y="1529"/>
         </scene>
         <!--MealsVC-->
         <scene sceneID="Tlu-ng-lmq">
@@ -356,7 +356,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xsS-hs-HiO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4760" y="1529"/>
+            <point key="canvasLocation" x="4700" y="1529"/>
         </scene>
         <!--Post-->
         <scene sceneID="mLa-61-7PG">
@@ -590,7 +590,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="e7u-1y-dv3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7774.8091603053435" y="1528.8732394366198"/>
+            <point key="canvasLocation" x="7743" y="1529"/>
         </scene>
         <!--FeedVC-->
         <scene sceneID="eyW-4p-sY1">
@@ -631,7 +631,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pQB-NR-frE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="7775" y="2220"/>
+            <point key="canvasLocation" x="7743" y="2231"/>
         </scene>
         <!--Edit ProfileVC-->
         <scene sceneID="ytn-eT-fY3">
@@ -746,7 +746,150 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="blv-Uy-sak" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3618" y="2981"/>
+            <point key="canvasLocation" x="3618" y="2257"/>
+        </scene>
+        <!--Add DietVC-->
+        <scene sceneID="lXf-Pm-X9c">
+            <objects>
+                <viewController storyboardIdentifier="AddDietVC" id="lPC-ye-mek" customClass="AddDietVC" customModule="GMS" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xfa-YE-wBp">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Wz-3n-Kev" customClass="NavigationHeaderView" customModule="GMS" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="59" width="393" height="50"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="b7A-71-pHN"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="EeO-F5-VA8">
+                                <rect key="frame" x="10" y="134" width="373" height="385"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gfy-gq-9yS" customClass="DropDownInputField" customModule="GMS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="373" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="6qi-kO-8hF"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mbm-rU-eSP" customClass="DropDownInputField" customModule="GMS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="70" width="373" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="yQv-4v-xyY"/>
+                                        </constraints>
+                                    </view>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kpl-Xm-7tI" customClass="DropDownInputField" customModule="GMS" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="140" width="373" height="60"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="VTN-R1-0zp"/>
+                                        </constraints>
+                                    </view>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Fxa-k1-Jnw">
+                                        <rect key="frame" x="0.0" y="210" width="373" height="60"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="VwO-1m-x8D" customClass="InputField" customModule="GMS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="213" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wkd-hB-MSa">
+                                                <rect key="frame" x="223" y="12.666666666666686" width="80" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="NYK-tX-crh"/>
+                                                    <constraint firstAttribute="height" constant="35" id="iRD-PS-jgg"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled" title="Add"/>
+                                                <connections>
+                                                    <action selector="addFoodBtnTapped:" destination="lPC-ye-mek" eventType="touchUpInside" id="qcr-yR-4hB"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XEg-8L-HLv">
+                                                <rect key="frame" x="313" y="12.666666666666686" width="60" height="35"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="height" constant="35" id="ECC-OP-xev"/>
+                                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="60" id="sn8-EM-5z4"/>
+                                                </constraints>
+                                                <state key="normal" title="Button"/>
+                                                <buttonConfiguration key="configuration" style="filled">
+                                                    <imageReference key="image" image="camera.fill" catalog="system" symbolScale="small"/>
+                                                </buttonConfiguration>
+                                                <connections>
+                                                    <action selector="addFoodImageBtnTapped:" destination="lPC-ye-mek" eventType="touchUpInside" id="nfZ-Wh-xuR"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="Mdh-SU-pcL"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="Urc-z7-9lk">
+                                        <rect key="frame" x="0.0" y="280" width="373" height="60"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fy9-cY-IGI" customClass="InputField" customModule="GMS" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="0.0" width="85.666666666666671" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="P1D-Bp-szy" customClass="InputField" customModule="GMS" customModuleProvider="target">
+                                                <rect key="frame" x="95.666666666666686" y="0.0" width="86" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lfb-uS-jEN" customClass="InputField" customModule="GMS" customModuleProvider="target">
+                                                <rect key="frame" x="191.66666666666666" y="0.0" width="85.666666666666657" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EtS-FU-CON" customClass="InputField" customModule="GMS" customModuleProvider="target">
+                                                <rect key="frame" x="287.33333333333331" y="0.0" width="85.666666666666686" height="60"/>
+                                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="4ES-sz-af2"/>
+                                        </constraints>
+                                    </stackView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3iO-83-q3j">
+                                        <rect key="frame" x="0.0" y="350" width="373" height="35"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="35" id="gxv-kO-kpM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="filled" title="Add Meal">
+                                            <color key="baseBackgroundColor" red="0.55294117647058827" green="0.55294117647058827" blue="0.55294117647058827" alpha="1" colorSpace="calibratedRGB"/>
+                                        </buttonConfiguration>
+                                        <connections>
+                                            <action selector="addMealBtnTapped:" destination="lPC-ye-mek" eventType="touchUpInside" id="hzA-fF-roN"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="LFw-OG-4Xj"/>
+                        <color key="backgroundColor" red="0.94901960784313721" green="0.94901960784313721" blue="0.94901960784313721" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Wz-3n-Kev" firstAttribute="leading" secondItem="LFw-OG-4Xj" secondAttribute="leading" id="075-ck-R8y"/>
+                            <constraint firstItem="6Wz-3n-Kev" firstAttribute="top" secondItem="LFw-OG-4Xj" secondAttribute="top" id="LEe-D3-Vn7"/>
+                            <constraint firstItem="EeO-F5-VA8" firstAttribute="top" secondItem="6Wz-3n-Kev" secondAttribute="bottom" constant="25" id="M9w-m1-nsz"/>
+                            <constraint firstItem="LFw-OG-4Xj" firstAttribute="trailing" secondItem="6Wz-3n-Kev" secondAttribute="trailing" id="aic-wZ-UcY"/>
+                            <constraint firstItem="LFw-OG-4Xj" firstAttribute="trailing" secondItem="EeO-F5-VA8" secondAttribute="trailing" constant="10" id="bhV-YY-uZt"/>
+                            <constraint firstItem="EeO-F5-VA8" firstAttribute="leading" secondItem="LFw-OG-4Xj" secondAttribute="leading" constant="10" id="jrb-zO-3nr"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="addFoodInputField" destination="VwO-1m-x8D" id="aLt-Rx-dwz"/>
+                        <outlet property="caloriesInputField" destination="EtS-FU-CON" id="X5X-Uz-WQP"/>
+                        <outlet property="carbsInputField" destination="P1D-Bp-szy" id="Hfq-6X-IiS"/>
+                        <outlet property="dietTypeDropDown" destination="gfy-gq-9yS" id="dHv-sd-RYt"/>
+                        <outlet property="fatsInputField" destination="lfb-uS-jEN" id="A1o-Vm-kao"/>
+                        <outlet property="foodCategoryDropDown" destination="mbm-rU-eSP" id="b44-oq-RXX"/>
+                        <outlet property="mealTypeDropDown" destination="Kpl-Xm-7tI" id="gjS-d5-DyY"/>
+                        <outlet property="proteinInputField" destination="fy9-cY-IGI" id="Hce-Ri-paO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Wht-NY-Goc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3658.7786259541981" y="2995.7746478873241"/>
         </scene>
         <!--Explore-->
         <scene sceneID="q7s-Tc-56U">
@@ -920,6 +1063,7 @@
     </scenes>
     <resources>
         <image name="avatar" width="599" height="400"/>
+        <image name="camera.fill" catalog="system" width="128" height="93"/>
         <image name="dumbbell" catalog="system" width="128" height="72"/>
         <image name="dumbbell.fill" catalog="system" width="128" height="72"/>
         <image name="house" catalog="system" width="128" height="104"/>

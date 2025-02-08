@@ -18,7 +18,6 @@ struct NavigationManager {
         }
         return viewController
     }
-    
     /// Pushes a view controller of declared type in navigation stack.
     static func push<T: UIViewController>(ofType type: T.Type, fromStoryboard storyboardName: String, using navigationController: UINavigationController?) {
         let viewController = instantiate(ofType: type, fromStoryboard: storyboardName)
