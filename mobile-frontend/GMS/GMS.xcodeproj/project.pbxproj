@@ -57,7 +57,7 @@
 		83A5758D2D54DBDD004F1CC4 /* EditProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5758C2D54DBDD004F1CC4 /* EditProfileVC.swift */; };
 		83A5758F2D54F1AF004F1CC4 /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83A5758E2D54F1AF004F1CC4 /* InputTextView.swift */; };
 		83A575942D54F386004F1CC4 /* InputTextView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83A575932D54F386004F1CC4 /* InputTextView.xib */; };
-		83AB9F5E2D57D07F00816F0B /* AddDietVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB9F5D2D57D07F00816F0B /* AddDietVC.swift */; };
+		83AB9F5E2D57D07F00816F0B /* UploadDietVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83AB9F5D2D57D07F00816F0B /* UploadDietVC.swift */; };
 		83B58C2D2D536CAE004A0AEE /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B58C2C2D536CAE004A0AEE /* ProfileVC.swift */; };
 		83B58C2F2D537514004A0AEE /* ProfileDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B58C2E2D537513004A0AEE /* ProfileDetailsView.swift */; };
 		83B58C312D53752E004A0AEE /* ProfileDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B58C302D53752E004A0AEE /* ProfileDetailsView.xib */; };
@@ -138,7 +138,7 @@
 		83A5758C2D54DBDD004F1CC4 /* EditProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileVC.swift; sourceTree = "<group>"; };
 		83A5758E2D54F1AF004F1CC4 /* InputTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
 		83A575932D54F386004F1CC4 /* InputTextView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InputTextView.xib; sourceTree = "<group>"; };
-		83AB9F5D2D57D07F00816F0B /* AddDietVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDietVC.swift; sourceTree = "<group>"; };
+		83AB9F5D2D57D07F00816F0B /* UploadDietVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadDietVC.swift; sourceTree = "<group>"; };
 		83AD96DF45D43ADDE195E06B /* Pods-GMS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMS.release.xcconfig"; path = "Target Support Files/Pods-GMS/Pods-GMS.release.xcconfig"; sourceTree = "<group>"; };
 		83B58C2C2D536CAE004A0AEE /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		83B58C2E2D537513004A0AEE /* ProfileDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsView.swift; sourceTree = "<group>"; };
@@ -192,7 +192,7 @@
 				83B58C2C2D536CAE004A0AEE /* ProfileVC.swift */,
 				83A5758C2D54DBDD004F1CC4 /* EditProfileVC.swift */,
 				830E41F62D5504620004FEAD /* PostVC.swift */,
-				83AB9F5D2D57D07F00816F0B /* AddDietVC.swift */,
+				83AB9F5D2D57D07F00816F0B /* UploadDietVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -725,7 +725,7 @@
 				83666B482D4A49A200B6F368 /* NavigationHeaderView.swift in Sources */,
 				8380F93F2D4B9B8F00DF61F2 /* CardTableViewCell.swift in Sources */,
 				8335F2872D48F8FE0055F0BE /* AppDelegate.swift in Sources */,
-				83AB9F5E2D57D07F00816F0B /* AddDietVC.swift in Sources */,
+				83AB9F5E2D57D07F00816F0B /* UploadDietVC.swift in Sources */,
 				8335F2882D48F8FE0055F0BE /* SceneDelegate.swift in Sources */,
 				83B58C2D2D536CAE004A0AEE /* ProfileVC.swift in Sources */,
 				830E41F92D555DD30004FEAD /* PhotoPickerHelper.swift in Sources */,

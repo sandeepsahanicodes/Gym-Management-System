@@ -15,8 +15,15 @@ class PostVC: UIViewController {
     
     private let photoPickerHelper = PhotoPickerHelper()
     
+    let type = "trainer"
     override func viewDidLoad() {
         super.viewDidLoad()
+        if type == "trainer" {
+            navigationHeaderView.configure(heading: "Upload Diet", isAvatarHidden: true)
+            NavigationManager.push(ofType: UploadDietVC.self, fromStoryboard: "Main", using: self.navigationController)
+           
+        }
+        
         navigationHeaderView.configure(heading: "Post", isAvatarHidden: true)
         captiontInputTextView.configure(heading: "Add caption", text: "")
         photoPickerHelper.delegate = self
