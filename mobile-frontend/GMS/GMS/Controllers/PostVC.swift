@@ -20,7 +20,7 @@ class PostVC: UIViewController {
         super.viewDidLoad()
         if type == "trainer" {
             navigationHeaderView.configure(heading: "Upload Diet", isAvatarHidden: true)
-            NavigationManager.push(ofType: UploadDietVC.self, fromStoryboard: "Main", using: self.navigationController)
+            NavigationManager.push(ofType: UploadWorkoutVC.self, fromStoryboard: "Main", using: self.navigationController)
            
         }
         

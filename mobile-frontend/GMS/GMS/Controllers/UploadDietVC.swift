@@ -19,6 +19,12 @@ class UploadDietVC: UIViewController {
     @IBOutlet weak var fatsInputField: InputField!
     @IBOutlet weak var caloriesInputField: InputField!
     
+    @IBOutlet weak var foodsPreviewTextView: UITextView!
+    
+    @IBOutlet weak var dietBackgroundimage: UIImageView!
+    
+    private let photoPickerHelper = PhotoPickerHelper()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationHeaderView.configure(heading: "Upload Diet",avatarImage: "sandeep")
@@ -31,14 +37,26 @@ class UploadDietVC: UIViewController {
         carbsInputField.configure(heading: "Carbs", placeholder: "300g", contentType: .name)
         fatsInputField.configure(heading: "Fats", placeholder: "50g", contentType: .name)
         caloriesInputField.configure(heading: "Calories", placeholder: "120kcal", contentType: .name)
+        
+        photoPickerHelper.delegate = self
+        foodsPreviewTextView.styleBorder()
     }
     
     @IBAction func addFoodBtnTapped(_ sender: Any) {
     }
     
     @IBAction func addFoodImageBtnTapped(_ sender: Any) {
+        photoPickerHelper.presentPhotoPicker(from: self)
     }
     
     @IBAction func addMealBtnTapped(_ sender: Any) {
+    }
+}
+
+extension UploadDietVC: PhotoPickerDelegate {
+    func didSelectImage(_ image: UIImage) {
+        DispatchQueue.main.async {
+            self.dietBackgroundimage.image = image
+        }
     }
 }

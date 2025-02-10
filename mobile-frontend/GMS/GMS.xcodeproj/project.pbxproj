@@ -61,6 +61,7 @@
 		83B58C2D2D536CAE004A0AEE /* ProfileVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B58C2C2D536CAE004A0AEE /* ProfileVC.swift */; };
 		83B58C2F2D537514004A0AEE /* ProfileDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B58C2E2D537513004A0AEE /* ProfileDetailsView.swift */; };
 		83B58C312D53752E004A0AEE /* ProfileDetailsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 83B58C302D53752E004A0AEE /* ProfileDetailsView.xib */; };
+		83B9990A2D5A6B5D009623D4 /* UploadWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83B999092D5A6B5D009623D4 /* UploadWorkoutVC.swift */; };
 		9021A808B9FF4D826E8E25D1 /* Pods_GMSTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FFB7A846DE0D474A578F1EB7 /* Pods_GMSTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -143,6 +144,7 @@
 		83B58C2C2D536CAE004A0AEE /* ProfileVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileVC.swift; sourceTree = "<group>"; };
 		83B58C2E2D537513004A0AEE /* ProfileDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileDetailsView.swift; sourceTree = "<group>"; };
 		83B58C302D53752E004A0AEE /* ProfileDetailsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ProfileDetailsView.xib; sourceTree = "<group>"; };
+		83B999092D5A6B5D009623D4 /* UploadWorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadWorkoutVC.swift; sourceTree = "<group>"; };
 		944468CFD4E3AF3FA11AEE34 /* Pods-GMS-GMSUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMS-GMSUITests.debug.xcconfig"; path = "Target Support Files/Pods-GMS-GMSUITests/Pods-GMS-GMSUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		CBB61CBABC85EF90D614B16A /* Pods-GMS-GMSUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GMS-GMSUITests.release.xcconfig"; path = "Target Support Files/Pods-GMS-GMSUITests/Pods-GMS-GMSUITests.release.xcconfig"; sourceTree = "<group>"; };
 		E6679E93D0F7B0E8628E9CF2 /* Pods_GMS_GMSUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GMS_GMSUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -193,6 +195,7 @@
 				83A5758C2D54DBDD004F1CC4 /* EditProfileVC.swift */,
 				830E41F62D5504620004FEAD /* PostVC.swift */,
 				83AB9F5D2D57D07F00816F0B /* UploadDietVC.swift */,
+				83B999092D5A6B5D009623D4 /* UploadWorkoutVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -719,6 +722,7 @@
 				8302A06F2D4A7442000E4C92 /* Extension+UIView.swift in Sources */,
 				83B58C2F2D537514004A0AEE /* ProfileDetailsView.swift in Sources */,
 				8335F2852D48F8FE0055F0BE /* DropDownInputField.swift in Sources */,
+				83B9990A2D5A6B5D009623D4 /* UploadWorkoutVC.swift in Sources */,
 				8318B53A2D4E14D2001BED42 /* WorkoutsVC.swift in Sources */,
 				831A44102D4D3CD000A47067 /* InfoType.swift in Sources */,
 				8335F2862D48F8FE0055F0BE /* InputField.swift in Sources */,
